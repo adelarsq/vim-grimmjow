@@ -180,6 +180,9 @@ if &background == "dark"
   " https://github.com/kien/ctrlp.vim
   hi CtrlPMatch       guifg=#000000 guibg=#f8cf00 gui=none
 
+  " https://github.com/qstrahl/vim-matchmaker
+  hi Matchmaker gui=inverse
+
   " https://github.com/scrooloose/nerdtree
   hi NERDTreeDir      guifg=#5d8fbe ctermfg=67
   hi link NERDTreeDirSlash NERDTreeDir
@@ -329,7 +332,9 @@ else
   " Syntax ####################################################################
 
   hi Comment          guifg=#70a0d0 guibg=NONE    gui=NONE
+  " TODO avoid background glitch 
   hi CommentURL       guifg=#70a0ff guibg=NONE    gui=underline
+  " TODO avoid background glitch 
   hi CommentEmail     guifg=#70a0ff guibg=NONE    gui=underline
   hi SpecialComment   guifg=#6090c0               gui=bold
 
@@ -482,7 +487,10 @@ else
   
   " https://github.com/kien/ctrlp.vim
   hi link CtrlPMatch    Search
- 
+
+  " https://github.com/qstrahl/vim-matchmaker
+  hi Matchmaker gui=inverse
+
   " https://github.com/scrooloose/nerdtree
   hi NERDTreeDir      guifg=#0087d7 gui=bold ctermfg=32 cterm=bold
   hi link NERDTreeDirSlash NERDTreeDir
@@ -492,6 +500,8 @@ else
   hi NERDTreePartFile guifg=#000000 gui=bold ctermfg=16 cterm=bold
   hi NERDTreeLinkFile guifg=#ffaf00 ctermfg=214
   hi NERDTreeLinkDir  guifg=#ffaf00 ctermfg=214
+  hi NERDTreeBookmarkName gui=bold ctermbg=4 guifg=#07281c
+  hi NERDTreeBookmark     ctermbg=4 guifg=#797772
 
   " https://github.com/majutsushi/tagbar
   hi link TagbarSignature Comment
