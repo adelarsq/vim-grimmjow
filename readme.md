@@ -77,14 +77,15 @@ About
 
 Explicitly supported plugins:
 
-* [CtrlP](https://github.com/kien/ctrlp.vim)
-* [NERDTree](https://github.com/scrooloose/nerdtree)
-* [TagBar](https://github.com/majutsushi/tagbar)
-* [Sneak](https://github.com/justinmk/vim-sneak)
 * [Clever-f](https://github.com/rhysd/clever-f.vim)
-* [Startify](https://github.com/mhinz/vim-startify)
-* [jedi](https://github.com/davidhalter/jedi-vim)
+* [CtrlP](https://github.com/kien/ctrlp.vim)
+* [Matchmaker](https://github.com/qstrahl/vim-matchmaker)
+* [NERDTree](https://github.com/scrooloose/nerdtree)
 * [Quickfixsigns](https://github.com/tomtom/quickfixsigns_vim)
+* [Sneak](https://github.com/justinmk/vim-sneak)
+* [Startify](https://github.com/mhinz/vim-startify)
+* [TagBar](https://github.com/majutsushi/tagbar)
+* [jedi](https://github.com/davidhalter/jedi-vim)
 
 I love the [vim-kalisi](https://github.com/freeo/vim-kalisi) theme, but need
 some changes for my own needs. 
