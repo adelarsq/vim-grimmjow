@@ -5,7 +5,7 @@ Version 0.0.1
 
 Based on [vim-kalisi](https://github.com/freeo/vim-kalisi) theme.
 
-The colorscheme with GVim, MacVim and [*neovim*](https://github.com/neovim/neovim) in mind.
+The colorscheme with GVim, MacVim and [*neovim*](https://github.com/neovim/neovim).
 
 Main features:
 
@@ -21,63 +21,6 @@ Optimized for the following languages:
 * LaTeX
 * Python
 * Vim
-
-Screenshots
-===========
-
-
-
-## Light Grimmjow v0.0.1
-No new screenshots, because changes almost invisible in the grand scale, see the change log.
-
-### Python
-![screenshot](http://i.imgur.com/2ZShtop.png)
-
-### Vim
-![screenshot](http://i.imgur.com/qjfmA1E.png)
-
-### C/C++
-![screenshot](http://i.imgur.com/5HnbclI.png)
-
-###  HTML
-#### Django
-![screenshot](http://i.imgur.com/nO3eedm.png)
-
-#### JavaScript (embedded)
-![screenshot](http://i.imgur.com/oBl3tjc.png)
-
-### diff
-![screenshot](http://i.imgur.com/lR88CIH.png)
-
-### syntax.txt
-![screenshot](http://i.imgur.com/0IDr3RM.png)
-![screenshot](http://i.imgur.com/WrmEZfS.jpg)
-
-## Dark Grimmjow v0.0.1
-
-### Python
-![screenshot](http://i.imgur.com/QdAuC4q.png)
-
-### Vim
-![screenshot](http://i.imgur.com/1zFSerN.png)
-
-### C/C++
-![screenshot](http://i.imgur.com/g9wxYfN.png)
-
-###  HTML
-
-#### Django
-![screenshot](http://i.imgur.com/REj23Ik.png)
-
-#### JavaScript (embedded)
-![screenshot](http://i.imgur.com/a0pQ1fC.png)
-
-### diff
-![screenshot](http://i.imgur.com/J1pJ6ml.png)
-
-### syntax.txt
-![screenshot](http://i.imgur.com/jBZe98W.png)
-![screenshot](http://i.imgur.com/WLEGbOB.png)
 
 ## Installation
 
