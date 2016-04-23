@@ -1,37 +1,35 @@
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
-" Name:           kalisi
-" Author:         Arthur Jaron
-" EMail:          hifreeo@gmail.com
-" Version:        0.8.0
-" Last Change:    2015.09.27
-"
+" Name:           grimmjow
+" Author:         Adelar S. Queiroz
+" Version:        0.0.1
+" Last Change:    2016.04.23
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Settings
-if !exists('g:kalisi_recolor_quickfixsigns')
-  let g:kalisi_recolor_quickfixsigns = 1
+if !exists('g:grimmjow_recolor_quickfixsigns')
+  let g:grimmjow_recolor_quickfixsigns = 1
 endif
 
 " the default scheme is 'light'
 if &background == "dark"
   hi clear
-  let g:colors_name = "kalisi"
+  let g:colors_name = "grimmjow"
 
-  hi Normal 	        guifg=#d0d0d0 guibg=#404042  gui=none
+  hi Normal 	  guifg=#d0d0d0 guibg=#404042  gui=none
 
-  hi Comment 	        guifg=#8a8a8a
-  hi CommentURL       guifg=#6090c0 guibg=NONE     gui=underline
-  hi CommentEmail     guifg=#6090c0 guibg=NONE     gui=underline
+  hi Comment 	  guifg=#8a8a8a
+  hi CommentURL   guifg=#6090c0 guibg=NONE gui=underline
+  hi CommentEmail guifg=#6090c0 guibg=NONE gui=underline
 
-  hi Constant 	      guifg=#ffaf00                   gui=bold
-  hi String 	        guifg=#ffc63f
-  hi Character        guifg=#c85bff
-  hi Number           guifg=#ffad3f
-  hi Boolean 	        guifg=#94be54
-  hi Float            guifg=#fff650
+  hi Constant 	  guifg=#ffaf00 gui=bold
+  hi String 	  guifg=#ffc63f
+  hi Character    guifg=#c85bff
+  hi Number       guifg=#ffad3f
+  hi Boolean 	  guifg=#94be54
+  hi Float        guifg=#fff650
   
   " HTML Closing tags </...> 
   " Vim variables
@@ -113,22 +111,22 @@ if &background == "dark"
   hi CursorColumn     guibg=#4a4a4c
   hi MatchParen       guifg=#202020 guibg=#8fca24 gui=none
 
-  hi Visual           guibg=#3a4d6e               gui=none
-  hi VisualNOS                      guibg=#4a4d4e gui=none
+  hi Visual           guibg=#3a4d6e gui=none
+  hi VisualNOS        guibg=#4a4d4e gui=none
 
   hi Pmenu 	          guifg=#b5b5b5 guibg=#303032
   hi PmenuSel         guifg=#222222 guibg=#A6DB29 gui=none
-  hi PmenuSbar                      guibg=#a0a0a0
-  hi PmenuThumb                     guibg=#555555
+  hi PmenuSbar        guibg=#a0a0a0
+  hi PmenuThumb       guibg=#555555
 
   hi SignColumn       guifg=#A6E22E guibg=#303032
   hi FoldColumn       guifg=#b0b8c0 guibg=#373d43 gui=bold
-  hi Folded 	        guifg=#727780 guibg=#373d43 gui=none
+  hi Folded 	      guifg=#727780 guibg=#373d43 gui=none
 
   hi NonText          guifg=#958b7f guibg=#3a3a3a gui=none
   hi Conceal          guifg=#f6f3e8 guibg=#303030
 
-  hi LineNr 	        guifg=#857b6f guibg=#303032 gui=none
+  hi LineNr 	      guifg=#857b6f guibg=#303032 gui=none
   hi StatusLine       guifg=#b5b5b5 guibg=#222222 gui=none term=NONE cterm=NONE
   hi StatusLineNC     guifg=#857b6f guibg=#303032 gui=none
 
@@ -142,10 +140,10 @@ if &background == "dark"
   " Language Specific ##########################################################
   
   " Python (non-default syntax file)
-  hi PythonOperator   guifg=#7aa6c2 gui=none
-  hi pythonDocstring        guifg=#6a7a8d guibg=NONE gui=none
-  hi pythonDoctest    guifg=#4a6a8d
-  hi link pythonDocTest pythonDoctest
+  hi PythonOperator      guifg=#7aa6c2 gui=none
+  hi pythonDocstring     guifg=#6a7a8d guibg=NONE gui=none
+  hi pythonDoctest       guifg=#4a6a8d
+  hi link pythonDocTest  pythonDoctest
   hi link pythonDocTest2 pythonDoctest
 
   " C
@@ -155,7 +153,7 @@ if &background == "dark"
   hi javaScript       guifg=#a5c5b5 guibg=NONE gui=none
 
   " htmldjango
-  hi DjangoBlock      guifg=#20ba50            gui=none
+  hi DjangoBlock         guifg=#20ba50            gui=none
   hi link djangoTagBlock DjangoBlock
   hi link djangoVarBlock DjangoBlock
   hi link djangoFilter   SpecialChar
@@ -163,11 +161,11 @@ if &background == "dark"
   hi markdownUrl guifg=#0087ff gui=underline ctermfg=33 cterm=underline
   
   " mail
-  hi link mailHeader  Comment
-  hi link mailSubject	Constant
+  hi link mailHeader    Comment
+  hi link mailSubject   Constant
   hi link mailURL	    CommentURL
-  hi link mailEmail   PreCondit
-  hi mailSubject   	  ctermfg=226	guifg=#ffff00
+  hi link mailEmail     PreCondit
+  hi mailSubject   	    ctermfg=226	guifg=#ffff00
   hi mailQuoted1	    ctermfg=189	guifg=#d7d7ff
   hi mailQuoted2	    ctermfg=194 guifg=#d7ffd7
   hi mailQuoted3	    ctermfg=105 guifg=#8787ff
@@ -220,7 +218,7 @@ if &background == "dark"
   hi  jediFat         guibg=#303030  guifg=#afd700 gui=bold ctermbg=236 ctermfg=148 cterm=bold
 
   " https://github.com/tomtom/quickfixsigns_vim
-  if g:kalisi_recolor_quickfixsigns == 1
+  if g:grimmjow_recolor_quickfixsigns == 1
      hi QFSignsMark       guifg=#ffc63f guibg=#202020 gui=bold ctermfg=220 ctermbg=234 cterm=bold
      hi QFSignsDiffAdd    guifg=#108f4f guibg=#324832 ctermfg=35 ctermbg=22
      hi QFSignsDiffChange guifg=#336fdf guibg=#20385f ctermfg=27 ctermbg=17
@@ -324,7 +322,7 @@ else
   " Light
   """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
   hi clear
-  let g:colors_name = "kalisi"
+  let g:colors_name = "grimmjow"
 
   hi Normal           guifg=#000000 guibg=#f5f7f5 gui=NONE
 
@@ -523,7 +521,7 @@ else
   hi jediFat          guibg=#878787 guifg=#afd700 gui=bold ctermbg=244 ctermfg=148 cterm=bold
   
   " https://github.com/tomtom/quickfixsigns_vim
-  if g:kalisi_recolor_quickfixsigns == 1
+  if g:grimmjow_recolor_quickfixsigns == 1
        hi QFSignsMark       guifg=#005faf guibg=#a0a0a0 gui=bold ctermfg=25 ctermbg=247 cterm=bold
        hi QFSignsDiffAdd    guifg=#008700 guibg=#5fd75f ctermfg=28 ctermbg=77
        hi QFSignsDiffChange guifg=#5f5fd7 guibg=#afafff ctermfg=62 ctermbg=147

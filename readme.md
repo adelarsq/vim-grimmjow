@@ -1,8 +1,11 @@
-Vim Colorscheme: kalisi
+Vim Colorscheme: grimmjow
 =========================
-Version 0.8
 
-The colorscheme with [*neovim*](https://github.com/neovim/neovim) in mind.
+Version 0.0.1
+
+Based on [vim-kalisi](https://github.com/freeo/vim-kalisi) theme.
+
+The colorscheme with GVim, MacVim and [*neovim*](https://github.com/neovim/neovim) in mind.
 
 Main features:
 
@@ -21,13 +24,8 @@ Optimized for the following languages:
 
 Screenshots
 ===========
-<sub>Font: Liberation Mono 10pt</sub>
 
-The airline theme is named *kalisi* as well and already included in bling/vim-airline. Just add this to your vimrc, if you like the airline theme displayed in the screenshots:
-
-    let g:airline_theme='kalisi'
-
-## Dark Kalisi v0.8
+## Dark Grimmjow v0.0.1
 
 ### Python
 ![screenshot](http://i.imgur.com/QdAuC4q.png)
@@ -56,7 +54,7 @@ The airline theme is named *kalisi* as well and already included in bling/vim-ai
 
 
 
-## Light Kalisi v0.7
+## Light Grimmjow v0.0.1
 No new screenshots, because changes almost invisible in the grand scale, see the change log.
 
 ### Python
@@ -84,13 +82,31 @@ No new screenshots, because changes almost invisible in the grand scale, see the
 
 ## Installation
 
-### Vundle
+### [Vim-Plug](https://github.com/junegunn/vim-plug)
 
 1. Add this to your vimrc:
 
-        Bundle 'https://github.com/freeo/vim-kalisi'
+        Plug 'https://github.com/adelarsq/vim-grimmjow'
 
-        colorscheme kalisi
+        colorscheme grimmjow
+        set background=light
+        " or 
+        set background=dark
+        " if you don't set the background, the light theme will be used
+
+2. Run
+
+        :PlugInstall
+
+3. Restart Vim
+
+### [Vundle](https://github.com/adelarsq/vim-grimmjow)
+
+1. Add this to your vimrc:
+
+        Bundle 'https://github.com/adelarsq/vim-grimmjow'
+
+        colorscheme grimmjow
         set background=light
         " or 
         set background=dark
@@ -101,7 +117,6 @@ No new screenshots, because changes almost invisible in the grand scale, see the
         :BundleInstall
 
 3. Restart Vim
-
 
 ## 256 color terminal
 
@@ -129,9 +144,10 @@ Explicitly supported plugins:
 * [jedi](https://github.com/davidhalter/jedi-vim)
 * [Quickfixsigns](https://github.com/tomtom/quickfixsigns_vim)
 
-I consider this colorscheme all-new, because of the countless changes &
-iterations and because there is no resemblance to existing themes.
-The following colorschemes were influential in the beginning: blackboard, github, molokai, pyte and winter.
+I love the [vim-kalisi](https://github.com/freeo/vim-kalisi) theme, but need
+some changes for my own needs. 
+
+The following colorschemes were influential for this theme: vim-kalisi, blackboard, github, molokai, pyte and winter.
 
 Thanks to https://github.com/godlygeek/csapprox, which helped greatly in
 bringing 256 color terminal support to this colorscheme!
