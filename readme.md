@@ -25,33 +25,6 @@ Optimized for the following languages:
 Screenshots
 ===========
 
-## Dark Grimmjow v0.0.1
-
-### Python
-![screenshot](http://i.imgur.com/QdAuC4q.png)
-
-### Vim
-![screenshot](http://i.imgur.com/1zFSerN.png)
-
-### C/C++
-![screenshot](http://i.imgur.com/g9wxYfN.png)
-
-###  HTML
-
-#### Django
-![screenshot](http://i.imgur.com/REj23Ik.png)
-
-#### JavaScript (embedded)
-![screenshot](http://i.imgur.com/a0pQ1fC.png)
-
-### diff
-![screenshot](http://i.imgur.com/J1pJ6ml.png)
-
-### syntax.txt
-![screenshot](http://i.imgur.com/jBZe98W.png)
-![screenshot](http://i.imgur.com/WLEGbOB.png)
-
-
 
 
 ## Light Grimmjow v0.0.1
@@ -79,6 +52,32 @@ No new screenshots, because changes almost invisible in the grand scale, see the
 ### syntax.txt
 ![screenshot](http://i.imgur.com/0IDr3RM.png)
 ![screenshot](http://i.imgur.com/WrmEZfS.jpg)
+
+## Dark Grimmjow v0.0.1
+
+### Python
+![screenshot](http://i.imgur.com/QdAuC4q.png)
+
+### Vim
+![screenshot](http://i.imgur.com/1zFSerN.png)
+
+### C/C++
+![screenshot](http://i.imgur.com/g9wxYfN.png)
+
+###  HTML
+
+#### Django
+![screenshot](http://i.imgur.com/REj23Ik.png)
+
+#### JavaScript (embedded)
+![screenshot](http://i.imgur.com/a0pQ1fC.png)
+
+### diff
+![screenshot](http://i.imgur.com/J1pJ6ml.png)
+
+### syntax.txt
+![screenshot](http://i.imgur.com/jBZe98W.png)
+![screenshot](http://i.imgur.com/WLEGbOB.png)
 
 ## Installation
 
