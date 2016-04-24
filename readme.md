@@ -79,6 +79,7 @@ Explicitly supported plugins:
 
 * [Clever-f](https://github.com/rhysd/clever-f.vim)
 * [CtrlP](https://github.com/kien/ctrlp.vim)
+* [Eclim](https://github.com/ervandew/eclim)
 * [Matchmaker](https://github.com/qstrahl/vim-matchmaker)
 * [NERDTree](https://github.com/scrooloose/nerdtree)
 * [Quickfixsigns](https://github.com/tomtom/quickfixsigns_vim)
