@@ -546,6 +546,14 @@ else
   hi EclimWarning guibg=#c9c4c4 guifg=#FFFF00
   hi EclimInfo guibg=#c9c4c4 guifg=#afd700
   
+  " https://github.com/weynhamz/vim-plugin-minibufexpl
+  hi MBENormal               guifg=#586e75 guibg=#c9c4c4
+  hi MBEChanged              guifg=#79b541 guibg=#c9c4c4
+  hi MBEVisibleNormal        guifg=#586e75 guibg=#c9c4c4
+  hi MBEVisibleChanged       guifg=#79b541 guibg=#c9c4c4
+  hi MBEVisibleActiveNormal  guifg=#005f00 guibg=#afd700
+  hi MBEVisibleActiveChanged guifg=#005f00 guibg=#afd700
+
   " https://github.com/tomtom/quickfixsigns_vim
   if g:grimmjow_recolor_quickfixsigns == 1
        hi QFSignsMark       guifg=#005faf guibg=#a0a0a0 gui=bold ctermfg=25 ctermbg=247 cterm=bold

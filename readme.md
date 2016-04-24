@@ -81,6 +81,7 @@ Explicitly supported plugins:
 * [CtrlP](https://github.com/kien/ctrlp.vim)
 * [Eclim](https://github.com/ervandew/eclim)
 * [Matchmaker](https://github.com/qstrahl/vim-matchmaker)
+* [Minibufexpl](https://github.com/weynhamz/vim-plugin-minibufexpl)
 * [NERDTree](https://github.com/scrooloose/nerdtree)
 * [Quickfixsigns](https://github.com/tomtom/quickfixsigns_vim)
 * [Sneak](https://github.com/justinmk/vim-sneak)
