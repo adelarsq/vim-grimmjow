@@ -396,6 +396,8 @@ else
  
   hi Conceal          guifg=#303030 guibg=#e0e8e0
 
+  hi ColorColumn  guibg=#87D7FF
+
   hi DiffAdd                        guibg=#ddffdd 
   hi DiffChange                     guibg=#e8e8e8 
   hi DiffText         guifg=#000055 guibg=#ddddff
