@@ -44,11 +44,11 @@ if &background == "dark"
   " operator cpp: sizeof()
   hi Operator         guifg=#658aa5 guibg=NONE      gui=none
   "html: special keywords in jscript: window log
-  hi Keyword	        guifg=#adffdd                   gui=none
+  hi Keyword	      guifg=#adffdd                   gui=none
   hi Exception        guifg=#2080c0 guibg=NONE      gui=bold
 
-  hi PreProc 	        guifg=#2288ee                   gui=bold
-  hi Include 	        guifg=#2288ee                   gui=bold
+  hi PreProc 	      guifg=#2288ee                   gui=bold
+  hi Include 	      guifg=#2288ee                   gui=bold
   hi Define           guifg=#2288ee                   gui=bold
   hi Macro            guifg=#a68ad2                   gui=none
   hi PreCondit        guifg=#7aa6c2                   gui=none
@@ -64,7 +64,7 @@ if &background == "dark"
   " cpp: static cast
   hi Typedef          guifg=#55aa85
 
-  hi Special	        guifg=#e7f6da gui=none
+  hi Special	      guifg=#e7f6da gui=none
   hi SpecialChar      guifg=#6a96ff
   hi SpecialKey	      guifg=#767676 guibg=#3a3a3a ctermbg=243 ctermfg=237
 
@@ -181,7 +181,7 @@ if &background == "dark"
   hi CtrlPMatch       guifg=#000000 guibg=#f8cf00 gui=none
 
   " https://github.com/qstrahl/vim-matchmaker
-  hi Matchmaker gui=inverse
+  hi Matchmaker gui=none guifg=#000000 guibg=#f8cf00 
 
   " https://github.com/scrooloose/nerdtree
   hi NERDTreeDir      guifg=#5d8fbe ctermfg=67
@@ -229,6 +229,10 @@ if &background == "dark"
      let g:quickfixsigns#marks#texthl = "QFSignsMark"
      let g:quickfixsigns#vcsdiff#highlight = {'DEL': 'QFSignsDiffDelete', 'ADD': 'QFSignsDiffAdd', 'CHANGE': 'QFSignsDiffChange'}
   endif
+
+  " https://github.com/scrooloose/syntastic
+  hi SyntasticErrorSign  guifg=#f92672 guibg=NONE
+  hi SyntasticWarningSign guifg=#afd700 guibg=NONE
 
   " 256 Color Terminal (dark) ##################################################
   if &t_Co > 255
@@ -489,7 +493,7 @@ else
   hi link CtrlPMatch    Search
 
   " https://github.com/qstrahl/vim-matchmaker
-  hi Matchmaker gui=inverse
+  hi Matchmaker gui=underline
 
   " https://github.com/scrooloose/nerdtree
   hi NERDTreeDir      guifg=#0087d7 gui=bold ctermfg=32 cterm=bold
@@ -517,11 +521,11 @@ else
   hi CleverFDefaultLabel guibg=#ffd700 guifg=#000000 gui=bold ctermbg=220 ctermfg=16 cterm=bold
 
   " https://github.com/mhinz/vim-startify
-  hi StartifyBracket  guifg=#00d7ff  guibg=#005f87 gui=bold ctermfg=45 ctermbg=24 cterm=bold
+  hi StartifyBracket  guifg=#00d7ff  guibg=NONE gui=bold ctermfg=45 ctermbg=24 cterm=bold
   hi StartifyFile     guifg=#005fd7 ctermfg=26
   hi StartifyHeader   guifg=#005fd7 ctermfg=26
   hi link StartifyFooter StartifyHeader
-  hi StartifyNumber   ctermfg=215 guifg=#00ff00  guibg=#005f87 gui=bold ctermfg=46 ctermbg=24 cterm=bold
+  hi StartifyNumber   ctermfg=215 guifg=#00ff00  guibg=NONE gui=bold ctermfg=46 ctermbg=24 cterm=bold
   hi StartifyPath     guifg=#878787 ctermfg=242
   hi StartifySlash    guifg=#000000 ctermfg=16
   hi StartifySpecial  guifg=#666666 guibg=#d7d7d7 ctermfg=242 ctermbg=252
@@ -529,7 +533,11 @@ else
   " https://github.com/davidhalter/jedi-vim
   hi jediFunction     guibg=#878787 guifg=#f0f0f0 ctermbg=244 ctermfg=255
   hi jediFat          guibg=#878787 guifg=#afd700 gui=bold ctermbg=244 ctermfg=148 cterm=bold
-  
+
+  " https://github.com/scrooloose/syntastic
+  hi SyntasticErrorSign  guifg=#f92672 guibg=NONE
+  hi SyntasticWarningSign guifg=#afd700 guibg=NONE
+
   " https://github.com/tomtom/quickfixsigns_vim
   if g:grimmjow_recolor_quickfixsigns == 1
        hi QFSignsMark       guifg=#005faf guibg=#a0a0a0 gui=bold ctermfg=25 ctermbg=247 cterm=bold
