@@ -77,17 +77,18 @@ About
 
 Explicitly supported plugins:
 
-* [Clever-f](https://github.com/rhysd/clever-f.vim)
-* [CtrlP](https://github.com/kien/ctrlp.vim)
-* [Eclim](https://github.com/ervandew/eclim)
-* [Matchmaker](https://github.com/qstrahl/vim-matchmaker)
-* [Minibufexpl](https://github.com/weynhamz/vim-plugin-minibufexpl)
-* [NERDTree](https://github.com/scrooloose/nerdtree)
-* [Quickfixsigns](https://github.com/tomtom/quickfixsigns_vim)
-* [Sneak](https://github.com/justinmk/vim-sneak)
-* [Startify](https://github.com/mhinz/vim-startify)
-* [TagBar](https://github.com/majutsushi/tagbar)
-* [jedi](https://github.com/davidhalter/jedi-vim)
+* [clever-f.vim](https://github.com/rhysd/clever-f.vim)
+* [ctrlp.vim](https://github.com/kien/ctrlp.vim)
+* [eclim](https://github.com/ervandew/eclim)
+* [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
+* [vim-matchmaker](https://github.com/qstrahl/vim-matchmaker)
+* [vim-plugin-minibufexpl](https://github.com/weynhamz/vim-plugin-minibufexpl)
+* [nerdtree](https://github.com/scrooloose/nerdtree)
+* [quickfixsigns_vim](https://github.com/tomtom/quickfixsigns_vim)
+* [vim-sneak](https://github.com/justinmk/vim-sneak)
+* [vim-startify](https://github.com/mhinz/vim-startify)
+* [tagbar](https://github.com/majutsushi/tagbar)
+* [jedi-vim](https://github.com/davidhalter/jedi-vim)
 
 I love the [vim-kalisi](https://github.com/freeo/vim-kalisi) theme, but need
 some changes for my own needs. 

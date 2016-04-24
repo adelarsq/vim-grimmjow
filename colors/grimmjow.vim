@@ -217,8 +217,8 @@ if &background == "dark"
   hi StartifySpecial  guifg=#b2b2b2 guibg=#606060 ctermfg=249 ctermbg=241
 
   " https://github.com/davidhalter/jedi-vim
-  hi jediFunction     guibg=#303030 guifg=#767676 ctermbg=236 ctermfg=243
-  hi  jediFat         guibg=#303030  guifg=#afd700 gui=bold ctermbg=236 ctermfg=148 cterm=bold
+  hi jediFunction guibg=#303030 guifg=#767676 ctermbg=236 ctermfg=243
+  hi jediFat guibg=#303030 guifg=#afd700 gui=bold ctermbg=236 ctermfg=148 cterm=bold
 
   " https://github.com/tomtom/quickfixsigns_vim
   if g:grimmjow_recolor_quickfixsigns == 1
@@ -373,7 +373,7 @@ else
 
   hi Special          guifg=#ffaf00 guibg=NONE    gui=bold
   hi SpecialChar      guifg=#F92672               gui=bold
-  hi SpecialKey       guifg=#9e9e9e guibg=#e4e4e4 ctermfg=247 ctermbg=254
+  hi SpecialKey       guifg=#f5f7f5 guibg=#f5f7f5 ctermfg=247 ctermbg=254
   hi Tag              guifg=#0010ff               gui=bold
   hi Delimiter        guifg=#d80050 guibg=NONE    gui=none
   hi Debug            guifg=#ddb800 guibg=NONE    gui=bold
@@ -412,15 +412,14 @@ else
   hi VisualNOS                      guibg=#d8d8d8 gui=none
 
   hi Cursor           guifg=#ffffff guibg=#ff0000 gui=NONE
-  hi CursorLineNr     guifg=#e0e0e0 guibg=#c9c4c4 gui=bold
+  hi CursorLineNr     guifg=#000000 guibg=#eaeaea gui=bold
   hi Cursorline                     guibg=#eaeaea
   hi CursorColumn                   guibg=#eaeaea
   hi MatchParen       guifg=#ffffff guibg=#ffd030 gui=none
+  hi LineNr           guifg=#707070 guibg=#e0e0e0 gui=NONE
 
   hi Search           guifg=#000000 guibg=#b8ea00 gui=bold
   hi IncSearch        guifg=#f8cf00 guibg=#000000
-
-  hi LineNr           guifg=#707070 guibg=#e0e0e0 gui=NONE
 
   hi StatusLine       guifg=#e0e0e0 guibg=#707070 gui=NONE
   hi StatusLineNC     guifg=#e0e0e0 guibg=#a0a0a0 gui=NONE
@@ -553,6 +552,10 @@ else
   hi MBEVisibleChanged       guifg=#79b541 guibg=#c9c4c4
   hi MBEVisibleActiveNormal  guifg=#005f00 guibg=#afd700
   hi MBEVisibleActiveChanged guifg=#005f00 guibg=#afd700
+
+  " https://github.com/nathanaelkane/vim-indent-guides
+  hi IndentGuidesEven guifg=#c6c7c6 guibg=#dcdedc
+  hi IndentGuidesOdd guifg=#dcdedc guibg=#c6c7c6
 
   " https://github.com/tomtom/quickfixsigns_vim
   if g:grimmjow_recolor_quickfixsigns == 1
