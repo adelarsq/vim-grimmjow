@@ -538,6 +538,9 @@ else
   hi SyntasticErrorSign  guifg=#f92672 guibg=NONE
   hi SyntasticWarningSign guifg=#afd700 guibg=NONE
 
+  " https://github.com/kshenoy/vim-signature
+  hi SignatureMarkText guifg=#0087d7 guibg=#c9c4c4
+
   " https://github.com/tomtom/quickfixsigns_vim
   if g:grimmjow_recolor_quickfixsigns == 1
        hi QFSignsMark       guifg=#005faf guibg=#a0a0a0 gui=bold ctermfg=25 ctermbg=247 cterm=bold
