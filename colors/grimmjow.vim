@@ -421,7 +421,7 @@ else
 
   hi StatusLine       guifg=#e0e0e0 guibg=#707070 gui=NONE
   hi StatusLineNC     guifg=#e0e0e0 guibg=#a0a0a0 gui=NONE
-  hi VertSplit        guifg=#a0a0a0 guibg=#a0a0a0 gui=NONE
+  hi VertSplit        guifg=#000000 guibg=#e0e0e0 gui=NONE
   hi Folded           guifg=#707070 guibg=#e8e8e8 gui=NONE
   hi FoldColumn       guifg=#707070 guibg=#b0b0b0 gui=bold
 
@@ -506,7 +506,7 @@ else
   hi link TagbarSignature Comment
   hi TagbarScope      guifg=#0087d7 gui=bold ctermfg=32 cterm=bold
   hi TagbarType       guifg=#66b600 gui=bold ctermfg=70 cterm=bold
-  hi TagbarKind       guifg=#0000ff ctermfg=21
+  hi TagbarKind       guifg=#0087d7 ctermfg=21
   
   " https://github.com/justinmk/vim-sneak
   hi SneakPluginTarget guibg=#ffaf00 guifg=#ffff00 gui=bold ctermbg=214 ctermfg=226 cterm=bold
