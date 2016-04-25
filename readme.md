@@ -3,14 +3,12 @@ Vim Colorscheme: grimmjow
 
 Version 0.0.1
 
-Based on [vim-kalisi](https://github.com/freeo/vim-kalisi) theme.
-
-The colorscheme with GVim, MacVim and [*neovim*](https://github.com/neovim/neovim).
+The colorscheme with gvim, macvim and [neovim](https://github.com/neovim/neovim).
 
 Main features:
 
-* Dark Theme
 * Light Theme
+* Dark Theme
 * 256 color terminal support
 * Support for several plugins
 
@@ -85,22 +83,20 @@ Explicitly supported plugins:
 * [vim-plugin-minibufexpl](https://github.com/weynhamz/vim-plugin-minibufexpl)
 * [nerdtree](https://github.com/scrooloose/nerdtree)
 * [quickfixsigns_vim](https://github.com/tomtom/quickfixsigns_vim)
+* [vim-signify](https://github.com/mhinz/vim-signify)
 * [vim-sneak](https://github.com/justinmk/vim-sneak)
 * [vim-startify](https://github.com/mhinz/vim-startify)
 * [tagbar](https://github.com/majutsushi/tagbar)
 * [jedi-vim](https://github.com/davidhalter/jedi-vim)
 
-I love the [vim-kalisi](https://github.com/freeo/vim-kalisi) theme, but need
-some changes for my own needs. 
-
-The following colorschemes were influential for this theme: vim-kalisi, blackboard, github, molokai, pyte and winter.
+The following colorschemes were influential for this theme: [vim-kalisi](https://github.com/freeo/vim-kalisi), blackboard, github, molokai, pyte and winter.
 
 Thanks to https://github.com/godlygeek/csapprox, which helped greatly in
 bringing 256 color terminal support to this colorscheme!
 
-Suggestions for improving support for other programming languages and plugins are welcome!
-
 It contains two themes, one for each background setting (*light* and *dark*).
 The default colorscheme is *light*, as is Vims default setting, if you don't set the background manually.
 
-Following the **neovim** project, this colorscheme is licensed under the Apache 2.0 license.
+Suggestions for improving support for other programming languages and plugins are welcome!
+
+This colorscheme is licensed under the Apache 2.0 license.

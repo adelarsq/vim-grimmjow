@@ -553,6 +553,13 @@ else
   hi IndentGuidesEven guifg=#c6c7c6 guibg=#dcdedc
   hi IndentGuidesOdd guifg=#dcdedc guibg=#c6c7c6
 
+  " https://github.com/mhinz/vim-signify
+  hi SignifySignAdd             guifg=#008700 guibg=#c9c4c4
+  hi SignifySignChange          guifg=#ff9f00 guibg=#c9c4c4
+  hi SignifySignChangeDelete    guifg=#ff9f00 ffd700 guibg=#c9c4c4
+  hi SignifySignDelete          guifg=#ff0000 guibg=#c9c4c4
+  hi SignifySignDeleteFirstLine guifg=#ff0000 guibg=#c9c4c4
+
   " https://github.com/tomtom/quickfixsigns_vim
   if g:grimmjow_recolor_quickfixsigns == 1
        hi QFSignsMark       guifg=#005faf guibg=#a0a0a0 gui=bold ctermfg=25 ctermbg=247 cterm=bold
