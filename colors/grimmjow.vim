@@ -1,11 +1,8 @@
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"
 " Name:           grimmjow
 " Author:         Adelar S. Queiroz
 " Version:        0.0.1
 " Last Change:    2016.04.23
-"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Settings
@@ -173,7 +170,6 @@ if &background == "dark"
   hi mailQuoted5	    ctermfg=62	guifg=#5f5fd7
   hi mailQuoted6	    ctermfg=77	guifg=#5fd75f
   hi link mailSignature Comment
-
 
   " Plugins ####################################################################
   
@@ -448,7 +444,6 @@ else
   hi PmenuSbar                      guibg=#a0a0a0
   hi PmenuThumb                     guibg=#555555
 
-
   " Language Specific ##########################################################
   
   " Python (non-default syntax file)
@@ -487,7 +482,6 @@ else
   hi mailQuoted8	    ctermfg=101	guifg=#87875f
   hi mailSignature    ctermfg=209	guifg=#ff0000
 
-
   " Plugins ####################################################################
   
   " https://github.com/kien/ctrlp.vim
@@ -500,7 +494,7 @@ else
   hi NERDTreeDir      guifg=#0087d7 gui=bold ctermfg=32 cterm=bold
   hi link NERDTreeDirSlash NERDTreeDir
   hi link NERDTreeOpenable NERDTreeDir
-  hi NERDTreeClosable guifg=#008700  guibg=#5fd75f gui=bold ctermfg=28 ctermbg=77 cterm=bold
+  hi NERDTreeClosable guifg=#008700  guibg=#f5f7f5 gui=bold ctermfg=28 ctermbg=77 cterm=bold
   hi NERDTreePart     guifg=#c0c0c0 ctermfg=250
   hi NERDTreePartFile guifg=#000000 gui=bold ctermfg=16 cterm=bold
   hi NERDTreeLinkFile guifg=#ffaf00 ctermfg=214
