@@ -102,7 +102,7 @@ if &background == "dark"
   hi MoreMsg          guifg=#000000 guibg=#A6DB29 gui=none
   hi ModeMsg          guifg=#000000 guibg=#A6DB29
 
-  hi Cursor           guibg=#d80000 guifg=#ffffff
+  hi Cursor           guibg=#afd700 guifg=#121212
   hi CursorLineNr     guifg=#d0d0d0 guibg=#482020 gui=bold
   hi CursorLine       guibg=#4a4a4c
   hi CursorColumn     guibg=#4a4a4c
