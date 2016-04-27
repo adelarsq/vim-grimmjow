@@ -20,6 +20,8 @@ Optimized for the following languages:
 * Python
 * Vim
 
+![Screenshot](/img/screenshot.png)
+
 ## Installation
 
 ### [Vim-Plug](https://github.com/junegunn/vim-plug)
