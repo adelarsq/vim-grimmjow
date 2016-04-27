@@ -1,7 +1,7 @@
 Vim Colorscheme: grimmjow
 =========================
 
-Version 0.0.1
+Version 0.0.2
 
 The colorscheme with gvim, macvim and [neovim](https://github.com/neovim/neovim).
 
@@ -16,6 +16,7 @@ Optimized for the following languages:
 
 * C/C++
 * HTML (+ Django, JavaScript)
+* Java
 * LaTeX
 * Python
 * Vim
@@ -80,16 +81,18 @@ Explicitly supported plugins:
 * [clever-f.vim](https://github.com/rhysd/clever-f.vim)
 * [ctrlp.vim](https://github.com/kien/ctrlp.vim)
 * [eclim](https://github.com/ervandew/eclim)
+* [jedi-vim](https://github.com/davidhalter/jedi-vim)
+* [nerdtree](https://github.com/scrooloose/nerdtree)
+* [quickfixsigns_vim](https://github.com/tomtom/quickfixsigns_vim)
+* [rainbow](https://github.com/luochen1990/rainbow)
+* [tagbar](https://github.com/majutsushi/tagbar)
+* [undotree](https://github.com/mbbill/undotree)
 * [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
 * [vim-matchmaker](https://github.com/qstrahl/vim-matchmaker)
 * [vim-plugin-minibufexpl](https://github.com/weynhamz/vim-plugin-minibufexpl)
-* [nerdtree](https://github.com/scrooloose/nerdtree)
-* [quickfixsigns_vim](https://github.com/tomtom/quickfixsigns_vim)
 * [vim-signify](https://github.com/mhinz/vim-signify)
 * [vim-sneak](https://github.com/justinmk/vim-sneak)
 * [vim-startify](https://github.com/mhinz/vim-startify)
-* [tagbar](https://github.com/majutsushi/tagbar)
-* [jedi-vim](https://github.com/davidhalter/jedi-vim)
 
 The following colorschemes were influential for this theme: [vim-kalisi](https://github.com/freeo/vim-kalisi), blackboard, github, molokai, pyte and winter.
 
@@ -102,3 +105,4 @@ The default colorscheme is *light*, as is Vims default setting, if you don't set
 Suggestions for improving support for other programming languages and plugins are welcome!
 
 This colorscheme is licensed under the Apache 2.0 license.
+

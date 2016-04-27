@@ -214,7 +214,7 @@ if &background == "dark"
 
   " https://github.com/davidhalter/jedi-vim
   hi jediFunction guibg=#303030 guifg=#767676 ctermbg=236 ctermfg=243
-  hi jediFat guibg=#303030 guifg=#afd700 gui=bold ctermbg=236 ctermfg=148 cterm=bold
+  hi jediFat      guibg=#303030 guifg=#afd700 gui=bold ctermbg=236 ctermfg=148 cterm=bold
 
   " https://github.com/tomtom/quickfixsigns_vim
   if g:grimmjow_recolor_quickfixsigns == 1
@@ -225,6 +225,13 @@ if &background == "dark"
      let g:quickfixsigns#marks#texthl = "QFSignsMark"
      let g:quickfixsigns#vcsdiff#highlight = {'DEL': 'QFSignsDiffDelete', 'ADD': 'QFSignsDiffAdd', 'CHANGE': 'QFSignsDiffChange'}
   endif
+
+  
+  " https://github.com/luochen1990/rainbow
+  let g:rainbow_conf = {
+  \	'guifgs': ['royalblue3', 'darkorange3', '#108f4f', 'firebrick'],
+  \	'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
+  \}
 
   " https://github.com/scrooloose/syntastic
   hi SyntasticErrorSign  guifg=#f92672 guibg=NONE
@@ -446,6 +453,10 @@ else
 
   " Language Specific ##########################################################
   
+  " Java
+  hi javaScopeDecl    guifg=#0167dd 
+  hi javaClassDecl    guifg=#0167dd 
+
   " Python (non-default syntax file)
   hi PythonOperator   guifg=#0167dd               gui=none
   hi pythonDocstring  guifg=#004B84 guibg=NONE    gui=none
@@ -571,6 +582,24 @@ else
        let g:quickfixsigns#vcsdiff#highlight = {'DEL': 'QFSignsDiffDelete', 'ADD': 'QFSignsDiffAdd', 'CHANGE': 'QFSignsDiffChange'}
   endif
 
+  " https://github.com/luochen1990/rainbow
+  let g:rainbow_conf = {
+  \	'guifgs': ['royalblue3', 'darkorange3', '#108f4f', 'firebrick'],
+  \	'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
+  \}
+
+  " https://github.com/mhinz/vim-startify
+  hi StartifyHeader  ctermfg=203 guifg=#1060a0
+  hi StartifyBracket ctermfg=240 guifg=#5DC2D6
+  hi StartifyNumber  ctermfg=215 guifg=#005faf
+  hi StartifyPath    ctermfg=245 guifg=#66b600
+  hi StartifySlash   ctermfg=240 guifg=#66b600
+  hi StartifyFile    ctermfg=26  guifg=#008700 gui=bold
+
+  " https://github.com/mbbill/undotree
+  hi UndotreeSavedBig ctermfg=245   guifg=#11AF46
+  hi UndotreeSavedSmall ctermfg=240 guifg=#F1266F
+
   " 256 Color Terminal (light) ################################################
   if &t_Co > 255
     hi Normal ctermbg=255 ctermfg=16
@@ -658,3 +687,4 @@ else
     hi DjangoBlock cterm=bold ctermfg=22
   endif
 endif
+
