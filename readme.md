@@ -20,7 +20,7 @@ Optimized for the following languages:
 * Python
 * Vim
 
-<img src="https://github.com/adelarsq/vim-grimmjow/blob/master/images/screenshot.png" width="50%">
+<img src="https://github.com/adelarsq/vim-grimmjow/blob/master/images/screenshot.png" width="100%">
 
 ## Installation
 
