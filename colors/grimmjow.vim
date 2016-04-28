@@ -383,8 +383,8 @@ else
 
   hi Underlined       guifg=#202020 guibg=NONE    gui=underline
 
-  hi Error            guifg=#d80000 guibg=#d8d0d0 gui=bold,underline
-  hi ErrorMsg         guifg=#d80000 guibg=#d8d0d0 gui=bold
+  hi Error            guifg=#d80000 guibg=#f5f7f5 gui=bold,underline
+  hi ErrorMsg         guifg=#d80000 guibg=#f5f7f5 gui=bold
 
 
   " Misc syntax ###############################################################
@@ -399,7 +399,8 @@ else
  
   hi Conceal          guifg=#303030 guibg=#e0e8e0
 
-  hi ColorColumn      guibg=#87D7FF
+  " hi ColorColumn      guibg=#87D7FF
+  hi ColorColumn      guibg=#d0eeff
 
   hi DiffAdd                        guibg=#ddffdd 
   hi DiffChange                     guibg=#e8e8e8 
@@ -437,7 +438,7 @@ else
   hi MoreMsg          guifg=#000000 guibg=#A6DB29 gui=none
 
   hi ModeMsg          guifg=#000000 guibg=#A6DB29
-  hi WarningMsg       guifg=#d82020 guibg=NONE    gui=bold
+  hi WarningMsg       guifg=#d82020 guibg=#f5f7f5    gui=bold
 
 
   hi TabLine          guifg=#afd700 guibg=#005f00 gui=none
@@ -542,13 +543,13 @@ else
   hi jediFat          guibg=#878787 guifg=#afd700 gui=bold ctermbg=244 ctermfg=148 cterm=bold
 
   " https://github.com/scrooloose/syntastic
-  hi SyntasticErrorSign   guifg=#f92672 guibg=NONE
-  hi SyntasticWarningSign guifg=#afd700 guibg=NONE
+  hi SyntasticErrorSign   guifg=#f92672 guibg=#e0e0e0
+  hi SyntasticWarningSign guifg=#afd700 guibg=#e0e0e0
 
   " https://github.com/ervandew/eclim
-  hi EclimError   guibg=#c9c4c4 guifg=#f92672
-  hi EclimWarning guibg=#c9c4c4 guifg=#FFFF00
-  hi EclimInfo    guibg=#c9c4c4 guifg=#afd700
+  hi EclimError   guifg=#f92672 guibg=#e0e0e0 
+  hi EclimWarning guifg=#FFFF00 guibg=#e0e0e0 
+  hi EclimInfo    guifg=#afd700 guibg=#e0e0e0 
   
   " https://github.com/weynhamz/vim-plugin-minibufexpl
   hi MBENormal               guifg=#586e75 guibg=#c9c4c4
