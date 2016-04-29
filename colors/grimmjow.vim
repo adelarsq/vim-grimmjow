@@ -234,8 +234,8 @@ if &background == "dark"
   \}
 
   " https://github.com/scrooloose/syntastic
-  hi SyntasticErrorSign  guifg=#f92672 guibg=NONE
-  hi SyntasticWarningSign guifg=#afd700 guibg=NONE
+  hi SyntasticErrorSign  guifg=#f92672 guibg=#e0e0e0
+  hi SyntasticWarningSign guifg=#afd700 guibg=#e0e0e0
 
   " 256 Color Terminal (dark) ##################################################
   if &t_Co > 255
@@ -383,8 +383,8 @@ else
 
   hi Underlined       guifg=#202020 guibg=NONE    gui=underline
 
-  hi Error            guifg=#d80000 guibg=#f5f7f5 gui=bold,underline
-  hi ErrorMsg         guifg=#d80000 guibg=#f5f7f5 gui=bold
+  hi Error            guifg=#d80000 guibg=#d8d0d0 gui=bold,underline
+  hi ErrorMsg         guifg=#d80000 guibg=#d8d0d0 gui=bold
 
 
   " Misc syntax ###############################################################
@@ -395,12 +395,14 @@ else
   " html: special keywords in jscript: window log 
   hi Keyword          guifg=#66b600               gui=none
   hi Title            guifg=#1060a0 guibg=NONE    gui=bold
-  hi NonText          guifg=#a0a0a0 guibg=#d8d0d0 gui=none
+  " hi NonText          guifg=#a0a0a0 guibg=#d8d0d0 gui=none
+  hi NonText          guifg=#303030 guibg=#eaeaea gui=none
  
   hi Conceal          guifg=#303030 guibg=#e0e8e0
 
   " hi ColorColumn      guibg=#87D7FF
-  hi ColorColumn      guibg=#d0eeff
+  " hi ColorColumn      guibg=#eaeaea
+  hi ColorColumn      guibg=#b8ddf0 term=reverse ctermbg=12
 
   hi DiffAdd                        guibg=#ddffdd 
   hi DiffChange                     guibg=#e8e8e8 
@@ -438,8 +440,7 @@ else
   hi MoreMsg          guifg=#000000 guibg=#A6DB29 gui=none
 
   hi ModeMsg          guifg=#000000 guibg=#A6DB29
-  hi WarningMsg       guifg=#d82020 guibg=#f5f7f5    gui=bold
-
+  hi WarningMsg       guifg=#d82020 guibg=NONE    gui=bold
 
   hi TabLine          guifg=#afd700 guibg=#005f00 gui=none
   hi TabLineSel       guifg=#005f00 guibg=#afd700 gui=none
@@ -464,6 +465,7 @@ else
   hi pythonDoctest    guifg=#0000af
   hi link pythonDocTest pythonDoctest
   hi link pythonDocTest2 pythonDoctest
+
   " C
   hi cType            guifg=#66b600 ctermfg=70
   hi link javaType cType
@@ -496,8 +498,20 @@ else
 
   " Plugins ####################################################################
   
+  " https://github.com/rhysd/clever-f.vim
+  hi CleverFDefaultLabel guibg=#ffd700 guifg=#000000 gui=bold ctermbg=220 ctermfg=16 cterm=bold
+
   " https://github.com/kien/ctrlp.vim
   hi link CtrlPMatch Search
+
+  " https://github.com/ervandew/eclim
+  hi EclimError   guibg=#c9c4c4 guifg=#f92672
+  hi EclimWarning guibg=#c9c4c4 guifg=#FFFF00
+  hi EclimInfo    guibg=#c9c4c4 guifg=#afd700
+  
+  " https://github.com/davidhalter/jedi-vim
+  hi jediFunction     guibg=#878787 guifg=#f0f0f0 ctermbg=244 ctermfg=255
+  hi jediFat          guibg=#878787 guifg=#afd700 gui=bold ctermbg=244 ctermfg=148 cterm=bold
 
   " https://github.com/qstrahl/vim-matchmaker
   hi Matchmaker gui=underline
@@ -514,6 +528,26 @@ else
   hi NERDTreeBookmarkName gui=bold ctermbg=4 guifg=#07281c
   hi NERDTreeBookmark     ctermbg=4 guifg=#797772
 
+  " https://github.com/tomtom/quickfixsigns_vim
+  if g:grimmjow_recolor_quickfixsigns == 1
+       hi QFSignsMark       guifg=#005faf guibg=#a0a0a0 gui=bold ctermfg=25 ctermbg=247 cterm=bold
+       hi QFSignsDiffAdd    guifg=#008700 guibg=#5fd75f ctermfg=28 ctermbg=77
+       hi QFSignsDiffChange guifg=#5f5fd7 guibg=#afafff ctermfg=62 ctermbg=147
+       hi QFSignsDiffDelete guifg=#ff5f00 guibg=#ffafaf ctermfg=202 ctermbg=217
+       let g:quickfixsigns#marks#texthl = "QFSignsMark"
+       let g:quickfixsigns#vcsdiff#highlight = {'DEL': 'QFSignsDiffDelete', 'ADD': 'QFSignsDiffAdd', 'CHANGE': 'QFSignsDiffChange'}
+  endif
+
+  " https://github.com/justinmk/vim-sneak
+  hi SneakPluginTarget guibg=#ffaf00 guifg=#ffff00 gui=bold ctermbg=214 ctermfg=226 cterm=bold
+  hi link SneakPluginScope Visual
+
+  " https://github.com/luochen1990/rainbow
+  let g:rainbow_conf = {
+  \	'guifgs': ['royalblue3', 'darkorange3', '#108f4f', 'firebrick'],
+  \	'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
+  \}
+
   " https://github.com/majutsushi/tagbar
   hi link TagbarSignature Comment
   hi TagbarScope        guifg=#0087d7 gui=bold ctermfg=32 cterm=bold
@@ -521,36 +555,10 @@ else
   hi TagbarKind         guifg=#0087d7 ctermfg=21
   hi TagbarAccessPublic guifg=#66b600  
   
-  " https://github.com/justinmk/vim-sneak
-  hi SneakPluginTarget guibg=#ffaf00 guifg=#ffff00 gui=bold ctermbg=214 ctermfg=226 cterm=bold
-  hi link SneakPluginScope Visual
+  " https://github.com/nathanaelkane/vim-indent-guides
+  hi IndentGuidesEven guifg=#c6c7c6 guibg=#dcdedc
+  hi IndentGuidesOdd  guifg=#dcdedc guibg=#c6c7c6
 
-  " https://github.com/rhysd/clever-f.vim
-  hi CleverFDefaultLabel guibg=#ffd700 guifg=#000000 gui=bold ctermbg=220 ctermfg=16 cterm=bold
-
-  " https://github.com/mhinz/vim-startify
-  hi StartifyBracket  guifg=#00d7ff  guibg=NONE gui=bold ctermfg=45 ctermbg=24 cterm=bold
-  hi StartifyFile     guifg=#005fd7 ctermfg=26
-  hi StartifyHeader   guifg=#005fd7 ctermfg=26
-  hi link StartifyFooter StartifyHeader
-  hi StartifyNumber   ctermfg=215 guifg=#00ff00  guibg=NONE gui=bold ctermfg=46 ctermbg=24 cterm=bold
-  hi StartifyPath     guifg=#878787 ctermfg=242
-  hi StartifySlash    guifg=#000000 ctermfg=16
-  hi StartifySpecial  guifg=#666666 guibg=#d7d7d7 ctermfg=242 ctermbg=252
-
-  " https://github.com/davidhalter/jedi-vim
-  hi jediFunction     guibg=#878787 guifg=#f0f0f0 ctermbg=244 ctermfg=255
-  hi jediFat          guibg=#878787 guifg=#afd700 gui=bold ctermbg=244 ctermfg=148 cterm=bold
-
-  " https://github.com/scrooloose/syntastic
-  hi SyntasticErrorSign   guifg=#f92672 guibg=#e0e0e0
-  hi SyntasticWarningSign guifg=#afd700 guibg=#e0e0e0
-
-  " https://github.com/ervandew/eclim
-  hi EclimError   guifg=#f92672 guibg=#e0e0e0 
-  hi EclimWarning guifg=#FFFF00 guibg=#e0e0e0 
-  hi EclimInfo    guifg=#afd700 guibg=#e0e0e0 
-  
   " https://github.com/weynhamz/vim-plugin-minibufexpl
   hi MBENormal               guifg=#586e75 guibg=#c9c4c4
   hi MBEChanged              guifg=#79b541 guibg=#c9c4c4
@@ -558,10 +566,6 @@ else
   hi MBEVisibleChanged       guifg=#79b541 guibg=#c9c4c4
   hi MBEVisibleActiveNormal  guifg=#005f00 guibg=#afd700
   hi MBEVisibleActiveChanged guifg=#005f00 guibg=#afd700
-
-  " https://github.com/nathanaelkane/vim-indent-guides
-  hi IndentGuidesEven guifg=#c6c7c6 guibg=#dcdedc
-  hi IndentGuidesOdd  guifg=#dcdedc guibg=#c6c7c6
 
   " https://github.com/kshenoy/vim-signature
   hi SignatureMarkText guifg=#0087d7 guibg=#e0e0e0
@@ -573,29 +577,15 @@ else
   hi SignifySignDelete          guifg=#ff0000 guibg=#e0e0e0
   hi SignifySignDeleteFirstLine guifg=#ff0000 guibg=#e0e0e0
 
-  " https://github.com/tomtom/quickfixsigns_vim
-  if g:grimmjow_recolor_quickfixsigns == 1
-       hi QFSignsMark       guifg=#005faf guibg=#a0a0a0 gui=bold ctermfg=25 ctermbg=247 cterm=bold
-       hi QFSignsDiffAdd    guifg=#008700 guibg=#5fd75f ctermfg=28 ctermbg=77
-       hi QFSignsDiffChange guifg=#5f5fd7 guibg=#afafff ctermfg=62 ctermbg=147
-       hi QFSignsDiffDelete guifg=#ff5f00 guibg=#ffafaf ctermfg=202 ctermbg=217
-       let g:quickfixsigns#marks#texthl = "QFSignsMark"
-       let g:quickfixsigns#vcsdiff#highlight = {'DEL': 'QFSignsDiffDelete', 'ADD': 'QFSignsDiffAdd', 'CHANGE': 'QFSignsDiffChange'}
-  endif
-
-  " https://github.com/luochen1990/rainbow
-  let g:rainbow_conf = {
-  \	'guifgs': ['royalblue3', 'darkorange3', '#108f4f', 'firebrick'],
-  \	'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
-  \}
-
   " https://github.com/mhinz/vim-startify
   hi StartifyHeader  ctermfg=203 guifg=#1060a0
-  hi StartifyBracket ctermfg=240 guifg=#5DC2D6
-  hi StartifyNumber  ctermfg=215 guifg=#005faf
+  hi StartifyBracket ctermfg=240 guifg=#5DC2D6 guibg=NONE gui=bold ctermfg=45 ctermbg=24 cterm=bold
+  hi StartifyNumber  ctermfg=215 guifg=#005faf guibg=NONE gui=bold ctermfg=46 ctermbg=24 cterm=bold
   hi StartifyPath    ctermfg=245 guifg=#66b600
   hi StartifySlash   ctermfg=240 guifg=#66b600
   hi StartifyFile    ctermfg=26  guifg=#008700 gui=bold
+  hi StartifySpecial  guifg=#666666 guibg=#d7d7d7 ctermfg=242 ctermbg=252
+  hi link StartifyFooter StartifyHeader
 
   " https://github.com/mbbill/undotree
   hi UndotreeSavedBig ctermfg=245   guifg=#11AF46
@@ -688,4 +678,5 @@ else
     hi DjangoBlock cterm=bold ctermfg=22
   endif
 endif
+
 
