@@ -61,10 +61,6 @@ if &background == "dark"
   " cpp: static cast
   hi Typedef          guifg=#55aa85
 
-  hi Special	      guifg=#e7f6da gui=none
-  hi SpecialChar      guifg=#6a96ff
-  hi SpecialKey	      guifg=#767676 guibg=#3a3a3a ctermbg=243 ctermfg=237
-
   hi Tag              guifg=#00c0ff               gui=bold
   hi Delimiter        guifg=#7a9acd guibg=NONE    gui=none
 
@@ -374,9 +370,6 @@ else
   hi Structure        guifg=#274aac guibg=NONE    gui=none
   hi Typedef          guifg=#274aac               gui=italic
 
-  hi Special          guifg=#ffaf00 guibg=NONE    gui=bold
-  hi SpecialChar      guifg=#F92672               gui=bold
-  hi SpecialKey       guifg=#f5f7f5 guibg=#f5f7f5 ctermfg=247 ctermbg=254
   hi Tag              guifg=#0010ff               gui=bold
   hi Delimiter        guifg=#d80050 guibg=NONE    gui=none
   hi Debug            guifg=#ddb800 guibg=NONE    gui=bold
@@ -395,7 +388,10 @@ else
   " html: special keywords in jscript: window log 
   hi Keyword          guifg=#66b600               gui=none
   hi Title            guifg=#1060a0 guibg=NONE    gui=bold
-  " hi NonText          guifg=#a0a0a0 guibg=#d8d0d0 gui=none
+  
+  hi Special	      guifg=#3a3a3a gui=none
+  hi SpecialChar      guifg=#6a96ff gui=bold
+  hi SpecialKey	      guifg=#303030 guibg=#eaeaea ctermbg=243 ctermfg=237
   hi NonText          guifg=#303030 guibg=#eaeaea gui=none
  
   hi Conceal          guifg=#303030 guibg=#e0e8e0
@@ -448,10 +444,10 @@ else
 
   hi SignColumn       guifg=#A6E22E guibg=#e0e0e0 
 
-  hi Pmenu            guifg=#000000 guibg=#e8e8e8 gui=NONE
-  hi PmenuSel         guifg=#000000 guibg=#A6DB29 gui=bold
-  hi PmenuSbar                      guibg=#a0a0a0
-  hi PmenuThumb                     guibg=#555555
+  hi Pmenu        guifg=#ffffff   guibg=#323232
+  hi PmenuSel     guifg=#ffffff   guibg=#1994d1
+  hi PmenuSbar    guifg=#323232   guibg=#323232
+  hi PmenuThumb   guifg=#646464   guibg=#646464   gui=none
 
   " Language Specific ##########################################################
   
@@ -527,6 +523,7 @@ else
   hi NERDTreeLinkDir      guifg=#ffaf00 ctermfg=214
   hi NERDTreeBookmarkName gui=bold ctermbg=4 guifg=#07281c
   hi NERDTreeBookmark     ctermbg=4 guifg=#797772
+  hi NERDTreeBookmarksLeader guifg=#f5f7f5 guibg=#f5f7f5
 
   " https://github.com/tomtom/quickfixsigns_vim
   if g:grimmjow_recolor_quickfixsigns == 1
