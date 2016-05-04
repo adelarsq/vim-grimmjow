@@ -222,7 +222,7 @@ if &background == "dark"
   hi TagbarKind       guifg=#7ad6ff ctermfg=117
 
   " https://github.com/qstrahl/vim-matchmaker
-  hi Matchmaker gui=none guifg=#000000 guibg=#f8cf00 
+  hi Matchmaker gui=underline
 
   " https://github.com/justinmk/vim-sneak
   hi SneakPluginTarget guibg=#ff5f00 guifg=#ffff00 ctermbg=202 ctermfg=226
