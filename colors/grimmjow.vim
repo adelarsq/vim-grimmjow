@@ -1,8 +1,8 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Name:           grimmjow
 " Author:         Adelar S. Queiroz
-" Version:        0.0.2
-" Last Change:    2016.04.23
+" Version:        0.0.3
+" Last Change:    2016.05.03
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Settings
@@ -28,6 +28,8 @@ if &background == "dark"
   hi Boolean 	  guifg=#94be54
   hi Float        guifg=#fff650
   
+  hi ColorColumn      guibg=#303032 term=reverse ctermbg=12
+
   " HTML Closing tags </...> 
   " Vim variables
   hi Identifier       guifg=#29a3ac                   gui=none
@@ -132,15 +134,19 @@ if &background == "dark"
 
   " Language Specific ##########################################################
   
+  " C
+  hi link cType Type
+
+  " Java
+  hi javaScopeDecl    guifg=#0167dd 
+  hi javaClassDecl    guifg=#0167dd 
+
   " Python (non-default syntax file)
   hi PythonOperator      guifg=#7aa6c2 gui=none
   hi pythonDocstring     guifg=#6a7a8d guibg=NONE gui=none
   hi pythonDoctest       guifg=#4a6a8d
   hi link pythonDocTest  pythonDoctest
   hi link pythonDocTest2 pythonDoctest
-
-  " C
-  hi link cType Type
 
   " Embedded inside HTML <script>
   hi javaScript       guifg=#a5c5b5 guibg=NONE gui=none
@@ -169,11 +175,15 @@ if &background == "dark"
 
   " Plugins ####################################################################
   
+  " https://github.com/rhysd/clever-f.vim
+  hi CleverFDefaultLabel guibg=#5fd700 guifg=#404040 gui=bold ctermbg=76 ctermfg=238 cterm=bold
+
   " https://github.com/kien/ctrlp.vim
   hi CtrlPMatch       guifg=#000000 guibg=#f8cf00 gui=none
 
-  " https://github.com/qstrahl/vim-matchmaker
-  hi Matchmaker gui=none guifg=#000000 guibg=#f8cf00 
+  " https://github.com/davidhalter/jedi-vim
+  hi jediFunction guibg=#303030 guifg=#767676 ctermbg=236 ctermfg=243
+  hi jediFat      guibg=#303030 guifg=#afd700 gui=bold ctermbg=236 ctermfg=148 cterm=bold
 
   " https://github.com/scrooloose/nerdtree
   hi NERDTreeDir      guifg=#5d8fbe ctermfg=67
@@ -185,33 +195,6 @@ if &background == "dark"
   hi NERDTreeLinkFile guifg=#ffaf00 ctermfg=214
   hi NERDTreeLinkDir  guifg=#ffaf00 ctermfg=214
 
-  " https://github.com/majutsushi/tagbar
-  hi link TagbarSignature Comment
-  hi TagbarScope      guifg=#0087d7 gui=bold ctermfg=32 cterm=bold
-  hi TagbarType       guifg=#66b600 gui=bold ctermfg=70 cterm=bold
-  hi TagbarKind       guifg=#7ad6ff ctermfg=117
-
-  " https://github.com/justinmk/vim-sneak
-  hi SneakPluginTarget guibg=#ff5f00 guifg=#ffff00 ctermbg=202 ctermfg=226
-  hi link SneakPluginScope Visual
-
-  " https://github.com/rhysd/clever-f.vim
-  hi CleverFDefaultLabel guibg=#5fd700 guifg=#404040 gui=bold ctermbg=76 ctermfg=238 cterm=bold
-
-  " https://github.com/mhinz/vim-startify
-  hi StartifyBracket  guifg=#0087d7 guibg=#303030 gui=bold ctermfg=32 ctermbg=236 cterm=bold
-  hi StartifyFile     guifg=#00afff ctermfg=39
-  hi StartifyHeader   guifg=#00afff ctermfg=39
-  hi link StartifyFooter StartifyHeader
-  hi StartifyNumber   ctermfg=215 guifg=#00d700 guibg=#303030 gui=bold ctermfg=40 ctermbg=236 cterm=bold
-  hi StartifyPath     guifg=#949494 ctermfg=246
-  hi StartifySlash    guifg=#dadada ctermfg=253
-  hi StartifySpecial  guifg=#b2b2b2 guibg=#606060 ctermfg=249 ctermbg=241
-
-  " https://github.com/davidhalter/jedi-vim
-  hi jediFunction guibg=#303030 guifg=#767676 ctermbg=236 ctermfg=243
-  hi jediFat      guibg=#303030 guifg=#afd700 gui=bold ctermbg=236 ctermfg=148 cterm=bold
-
   " https://github.com/tomtom/quickfixsigns_vim
   if g:grimmjow_recolor_quickfixsigns == 1
      hi QFSignsMark       guifg=#ffc63f guibg=#202020 gui=bold ctermfg=220 ctermbg=234 cterm=bold
@@ -221,7 +204,6 @@ if &background == "dark"
      let g:quickfixsigns#marks#texthl = "QFSignsMark"
      let g:quickfixsigns#vcsdiff#highlight = {'DEL': 'QFSignsDiffDelete', 'ADD': 'QFSignsDiffAdd', 'CHANGE': 'QFSignsDiffChange'}
   endif
-
   
   " https://github.com/luochen1990/rainbow
   let g:rainbow_conf = {
@@ -232,6 +214,29 @@ if &background == "dark"
   " https://github.com/scrooloose/syntastic
   hi SyntasticErrorSign  guifg=#f92672 guibg=#e0e0e0
   hi SyntasticWarningSign guifg=#afd700 guibg=#e0e0e0
+
+  " https://github.com/majutsushi/tagbar
+  hi link TagbarSignature Comment
+  hi TagbarScope      guifg=#0087d7 gui=bold ctermfg=32 cterm=bold
+  hi TagbarType       guifg=#66b600 gui=bold ctermfg=70 cterm=bold
+  hi TagbarKind       guifg=#7ad6ff ctermfg=117
+
+  " https://github.com/qstrahl/vim-matchmaker
+  hi Matchmaker gui=none guifg=#000000 guibg=#f8cf00 
+
+  " https://github.com/justinmk/vim-sneak
+  hi SneakPluginTarget guibg=#ff5f00 guifg=#ffff00 ctermbg=202 ctermfg=226
+  hi link SneakPluginScope Visual
+
+  " https://github.com/mhinz/vim-startify
+  hi StartifyBracket  guifg=#0087d7 guibg=#303030 gui=bold ctermfg=32 ctermbg=236 cterm=bold
+  hi StartifyFile     guifg=#00afff ctermfg=39
+  hi StartifyHeader   guifg=#00afff ctermfg=39
+  hi link StartifyFooter StartifyHeader
+  hi StartifyNumber   ctermfg=215 guifg=#00d700 guibg=#303030 gui=bold ctermfg=40 ctermbg=236 cterm=bold
+  hi StartifyPath     guifg=#949494 ctermfg=246
+  hi StartifySlash    guifg=#dadada ctermfg=253
+  hi StartifySpecial  guifg=#b2b2b2 guibg=#606060 ctermfg=249 ctermbg=241
 
   " 256 Color Terminal (dark) ##################################################
   if &t_Co > 255
@@ -451,6 +456,11 @@ else
 
   " Language Specific ##########################################################
   
+  " C
+  hi cType            guifg=#66b600 ctermfg=70
+  hi link javaType cType
+  hi link TexType Function
+
   " Java
   hi javaScopeDecl    guifg=#0167dd 
   hi javaClassDecl    guifg=#0167dd 
@@ -461,11 +471,6 @@ else
   hi pythonDoctest    guifg=#0000af
   hi link pythonDocTest pythonDoctest
   hi link pythonDocTest2 pythonDoctest
-
-  " C
-  hi cType            guifg=#66b600 ctermfg=70
-  hi link javaType cType
-  hi link TexType Function
 
   " Embedded inside HTML <script>
   hi javaScript       guifg=#486050 guibg=NONE    gui=none
