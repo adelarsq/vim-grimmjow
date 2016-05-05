@@ -1,8 +1,8 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Name:           grimmjow
 " Author:         Adelar S. Queiroz
-" Version:        0.0.3
-" Last Change:    2016.05.03
+" Version:        0.0.4
+" Last Change:    2016.05.04
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Settings
@@ -181,6 +181,11 @@ if &background == "dark"
   " https://github.com/kien/ctrlp.vim
   hi CtrlPMatch       guifg=#000000 guibg=#f8cf00 gui=none
 
+  " https://github.com/ervandew/eclim
+  hi EclimError   guibg=#303030 guifg=#f92672
+  hi EclimWarning guibg=#303030 guifg=#FFFF00
+  hi EclimInfo    guibg=#303030 guifg=#afd700
+
   " https://github.com/davidhalter/jedi-vim
   hi jediFunction guibg=#303030 guifg=#767676 ctermbg=236 ctermfg=243
   hi jediFat      guibg=#303030 guifg=#afd700 gui=bold ctermbg=236 ctermfg=148 cterm=bold
@@ -224,19 +229,41 @@ if &background == "dark"
   " https://github.com/qstrahl/vim-matchmaker
   hi Matchmaker gui=underline
 
+  " https://github.com/weynhamz/vim-plugin-minibufexpl
+  hi MBENormal               guifg=#586e75 guibg=#404042
+  hi MBEChanged              guifg=#79b541 guibg=#404042
+  hi MBEVisibleNormal        guifg=#586e75 guibg=#404042
+  hi MBEVisibleChanged       guifg=#79b541 guibg=#404042
+  hi MBEVisibleActiveNormal  guifg=#005f00 guibg=#afd700
+  hi MBEVisibleActiveChanged guifg=#005f00 guibg=#afd700
+
+  " https://github.com/kshenoy/vim-signature
+  hi SignatureMarkText guifg=#0087d7 guibg=#404042
+
+  " https://github.com/mhinz/vim-signify
+  hi SignifySignAdd             guifg=#008700 guibg=#404042
+  hi SignifySignChange          guifg=#ff5f00 guibg=#404042
+  hi SignifySignChangeDelete    guifg=#ff5f00 guibg=#404042
+  hi SignifySignDelete          guifg=#ff0000 guibg=#404042
+  hi SignifySignDeleteFirstLine guifg=#ff0000 guibg=#404042
+
   " https://github.com/justinmk/vim-sneak
   hi SneakPluginTarget guibg=#ff5f00 guifg=#ffff00 ctermbg=202 ctermfg=226
   hi link SneakPluginScope Visual
 
   " https://github.com/mhinz/vim-startify
-  hi StartifyBracket  guifg=#0087d7 guibg=#303030 gui=bold ctermfg=32 ctermbg=236 cterm=bold
-  hi StartifyFile     guifg=#00afff ctermfg=39
-  hi StartifyHeader   guifg=#00afff ctermfg=39
-  hi link StartifyFooter StartifyHeader
-  hi StartifyNumber   ctermfg=215 guifg=#00d700 guibg=#303030 gui=bold ctermfg=40 ctermbg=236 cterm=bold
-  hi StartifyPath     guifg=#949494 ctermfg=246
-  hi StartifySlash    guifg=#dadada ctermfg=253
+  hi StartifyBracket  guifg=#5DC2D6 guibg=#404042 gui=bold ctermfg=32 ctermbg=236 cterm=bold
+  hi StartifyFile     guifg=#3c960f ctermfg=39
+  hi StartifyHeader   guifg=#1094a0 ctermfg=39
+  hi StartifyNumber   ctermfg=215 guifg=#1994d1 guibg=#404042 gui=bold ctermfg=40 ctermbg=236 cterm=bold
+  hi StartifyPath     guifg=#66b600 ctermfg=246
+  hi StartifySlash    guifg=#66b600 ctermfg=253
   hi StartifySpecial  guifg=#b2b2b2 guibg=#606060 ctermfg=249 ctermbg=241
+  hi link StartifyFooter StartifyHeader
+
+  " https://github.com/mbbill/undotree
+  hi UndotreeSavedBig ctermfg=245   guifg=#11AF46
+  hi UndotreeSavedSmall ctermfg=240 guifg=#F1266F
 
   " 256 Color Terminal (dark) ##################################################
   if &t_Co > 255
@@ -514,9 +541,6 @@ else
   hi jediFunction     guibg=#878787 guifg=#f0f0f0 ctermbg=244 ctermfg=255
   hi jediFat          guibg=#878787 guifg=#afd700 gui=bold ctermbg=244 ctermfg=148 cterm=bold
 
-  " https://github.com/qstrahl/vim-matchmaker
-  hi Matchmaker gui=underline
-
   " https://github.com/scrooloose/nerdtree
   hi NERDTreeDir      guifg=#0087d7 gui=bold ctermfg=32 cterm=bold
   hi link NERDTreeDirSlash NERDTreeDir
@@ -540,15 +564,15 @@ else
        let g:quickfixsigns#vcsdiff#highlight = {'DEL': 'QFSignsDiffDelete', 'ADD': 'QFSignsDiffAdd', 'CHANGE': 'QFSignsDiffChange'}
   endif
 
-  " https://github.com/justinmk/vim-sneak
-  hi SneakPluginTarget guibg=#ffaf00 guifg=#ffff00 gui=bold ctermbg=214 ctermfg=226 cterm=bold
-  hi link SneakPluginScope Visual
-
   " https://github.com/luochen1990/rainbow
   let g:rainbow_conf = {
   \	'guifgs': ['royalblue3', 'darkorange3', '#108f4f', 'firebrick'],
   \	'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
   \}
+
+  " https://github.com/scrooloose/syntastic
+  hi SyntasticErrorSign  guifg=#f92672 guibg=#e0e0e0
+  hi SyntasticWarningSign guifg=#afd700 guibg=#e0e0e0
 
   " https://github.com/majutsushi/tagbar
   hi link TagbarSignature Comment
@@ -560,6 +584,9 @@ else
   " https://github.com/nathanaelkane/vim-indent-guides
   hi IndentGuidesEven guifg=#c6c7c6 guibg=#dcdedc
   hi IndentGuidesOdd  guifg=#dcdedc guibg=#c6c7c6
+
+  " https://github.com/qstrahl/vim-matchmaker
+  hi Matchmaker gui=underline
 
   " https://github.com/weynhamz/vim-plugin-minibufexpl
   hi MBENormal               guifg=#586e75 guibg=#c9c4c4
@@ -579,13 +606,17 @@ else
   hi SignifySignDelete          guifg=#ff0000 guibg=#e0e0e0
   hi SignifySignDeleteFirstLine guifg=#ff0000 guibg=#e0e0e0
 
+  " https://github.com/justinmk/vim-sneak
+  hi SneakPluginTarget guibg=#ffaf00 guifg=#ffff00 gui=bold ctermbg=214 ctermfg=226 cterm=bold
+  hi link SneakPluginScope Visual
+
   " https://github.com/mhinz/vim-startify
-  hi StartifyHeader  ctermfg=203 guifg=#1060a0
   hi StartifyBracket ctermfg=240 guifg=#5DC2D6 guibg=NONE gui=bold ctermfg=45 ctermbg=24 cterm=bold
+  hi StartifyFile    ctermfg=26  guifg=#008700 gui=bold
+  hi StartifyHeader  ctermfg=203 guifg=#1060a0
   hi StartifyNumber  ctermfg=215 guifg=#005faf guibg=NONE gui=bold ctermfg=46 ctermbg=24 cterm=bold
   hi StartifyPath    ctermfg=245 guifg=#66b600
   hi StartifySlash   ctermfg=240 guifg=#66b600
-  hi StartifyFile    ctermfg=26  guifg=#008700 gui=bold
   hi StartifySpecial  guifg=#666666 guibg=#d7d7d7 ctermfg=242 ctermbg=252
   hi link StartifyFooter StartifyHeader
 
@@ -680,5 +711,4 @@ else
     hi DjangoBlock cterm=bold ctermfg=22
   endif
 endif
-
 
