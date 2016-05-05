@@ -2,7 +2,9 @@
 " Name:           grimmjow
 " Author:         Adelar S. Queiroz
 " Version:        0.0.4
-" Last Change:    2016.05.04
+" Last Change:    2016.05.05
+" URL:            https://github.com/adelarsq/vim-grimmjow
+" License:        Apache 2.0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Settings
@@ -444,7 +446,8 @@ else
 
   " User interface ############################################################
 
-  hi Visual                         guibg=#d0eeff gui=NONE
+  " hi Visual                         guibg=#d0eeff gui=NONE
+  hi Visual           guifg=#ffffff guibg=#398df0 gui=NONE
   hi VisualNOS                      guibg=#d8d8d8 gui=none
 
   hi Cursor           guifg=#ffffff guibg=#ff0000 gui=NONE
@@ -489,8 +492,8 @@ else
   hi link TexType Function
 
   " Java
-  hi javaScopeDecl    guifg=#0167dd 
-  hi javaClassDecl    guifg=#0167dd 
+  hi javaScopeDecl    guifg=#0167dd
+  hi javaClassDecl    guifg=#0167dd
 
   " Python (non-default syntax file)
   hi PythonOperator   guifg=#0167dd               gui=none
@@ -498,6 +501,16 @@ else
   hi pythonDoctest    guifg=#0000af
   hi link pythonDocTest pythonDoctest
   hi link pythonDocTest2 pythonDoctest
+
+  "  Ruby
+  hi rubyInterpolation      guifg=#ff4040 guibg=NONE gui=NONE
+  "hi rubyMethodBlock        guifg=#ff8da1 guibg=NONE gui=NONE
+  "hi rubyMethodBlock        guifg=#8ddaff guibg=NONE gui=NONE
+  hi rubyMethodBlock        guifg=#ffb28d guibg=NONE gui=NONE
+  hi rubyCurlyBlock         guifg=#f64a8a guibg=NONE gui=NONE
+  hi rubyDoBlock            guifg=#f64a8a guibg=NONE gui=NONE
+  hi rubyBlockExpression    guifg=#f64a8a guibg=NONE gui=NONE
+  hi rubyArrayDelimiter     guifg=#00bcbc guibg=NONE gui=NONE
 
   " Embedded inside HTML <script>
   hi javaScript       guifg=#486050 guibg=NONE    gui=none
@@ -711,4 +724,8 @@ else
     hi DjangoBlock cterm=bold ctermfg=22
   endif
 endif
+
+
+
+
 
