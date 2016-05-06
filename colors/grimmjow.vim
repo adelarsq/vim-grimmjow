@@ -432,7 +432,7 @@ else
 
   " hi ColorColumn      guibg=#87D7FF
   " hi ColorColumn      guibg=#eaeaea
-  hi ColorColumn      guibg=#b8ddf0 term=reverse ctermbg=12
+  hi ColorColumn      guibg=#e1f5ff term=reverse ctermbg=12
 
   hi DiffAdd                        guibg=#ddffdd 
   hi DiffChange                     guibg=#e8e8e8 
@@ -487,9 +487,9 @@ else
   " Language Specific ##########################################################
   
   " C
-  hi cType            guifg=#66b600 ctermfg=70
-  hi link javaType cType
-  hi link TexType Function
+  hi cType guifg=#66b600 ctermfg=70
+  hi link  javaType cType
+  hi link  TexType Function
 
   " Java
   hi javaScopeDecl    guifg=#0167dd
@@ -521,7 +521,7 @@ else
   hi link djangoVarBlock DjangoBlock
   hi link djangoFilter   Typedef
 
-  hi markdownUrl      guifg=#005faf gui=underline ctermfg=25 cterm=underline
+  hi markdownUrl guifg=#005faf gui=underline ctermfg=25 cterm=underline
 
   hi link mailHeader  Comment
   hi link mailSubject Constant
@@ -555,10 +555,10 @@ else
   hi jediFat          guibg=#878787 guifg=#afd700 gui=bold ctermbg=244 ctermfg=148 cterm=bold
 
   " https://github.com/scrooloose/nerdtree
-  hi NERDTreeDir      guifg=#0087d7 gui=bold ctermfg=32 cterm=bold
+  hi NERDTreeDir          guifg=#0087d7 gui=bold ctermfg=32 cterm=bold
   hi link NERDTreeDirSlash NERDTreeDir
-  hi link NERDTreeOpenable NERDTreeDir
-  hi NERDTreeClosable     guifg=#008700  guibg=#f5f7f5 gui=bold ctermfg=28 ctermbg=77 cterm=bold
+  hi NERDTreeOpenable     guifg=#0087d7 guibg=#f5f7f5 gui=bold ctermfg=28 ctermbg=77 cterm=bold
+  hi NERDTreeClosable     guifg=#0087d7 guibg=#f5f7f5 gui=bold ctermfg=28 ctermbg=77 cterm=bold
   hi NERDTreePart         guifg=#c0c0c0 ctermfg=250
   hi NERDTreePartFile     guifg=#000000 gui=bold ctermfg=16 cterm=bold
   hi NERDTreeLinkFile     guifg=#ffaf00 ctermfg=214
