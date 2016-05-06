@@ -1,7 +1,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Name:           grimmjow
 " Author:         Adelar S. Queiroz
-" Version:        0.0.4
+" Version:        0.0.5
 " Last Change:    2016.05.05
 " URL:            https://github.com/adelarsq/vim-grimmjow
 " License:        Apache 2.0

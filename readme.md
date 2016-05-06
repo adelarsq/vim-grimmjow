@@ -1,7 +1,7 @@
 Vim Colorscheme: grimmjow
 =========================
 
-Version 0.0.4
+Version 0.0.5
 
 The colorscheme with gvim, macvim and [neovim](https://github.com/neovim/neovim).
 
@@ -19,6 +19,7 @@ Optimized for the following languages:
 * Java
 * LaTeX
 * Python
+* Ruby
 * Vim
 
 <img src="https://github.com/adelarsq/vim-grimmjow/blob/master/images/screenshot.png" width="75%">
