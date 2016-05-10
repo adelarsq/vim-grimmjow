@@ -381,7 +381,7 @@ else
   hi clear
   let g:colors_name = "grimmjow"
 
-  hi Normal           guifg=#000000 guibg=#f5f7f5 gui=NONE
+  hi Normal           guifg=#444444 guibg=#f5f5f5 gui=NONE
 
   " Syntax ####################################################################
 
