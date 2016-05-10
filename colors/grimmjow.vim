@@ -1,8 +1,8 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Name:           grimmjow
 " Author:         Adelar S. Queiroz
-" Version:        0.0.5
-" Last Change:    2016.05.05
+" Version:        0.0.6
+" Last Change:    2016.05.09
 " URL:            https://github.com/adelarsq/vim-grimmjow
 " License:        Apache 2.0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -140,8 +140,8 @@ if &background == "dark"
   hi link cType Type
 
   " Java
-  hi javaScopeDecl    guifg=#0167dd 
-  hi javaClassDecl    guifg=#0167dd 
+  hi javaScopeDecl    guifg=#1994d1
+  hi javaClassDecl    guifg=#1994d1
 
   " Python (non-default syntax file)
   hi PythonOperator      guifg=#7aa6c2 gui=none
@@ -159,9 +159,10 @@ if &background == "dark"
   hi link djangoVarBlock DjangoBlock
   hi link djangoFilter   SpecialChar
 
+  " Markdown
   hi markdownUrl guifg=#0087ff gui=underline ctermfg=33 cterm=underline
   
-  " mail
+  " Mail
   hi link mailHeader    Comment
   hi link mailSubject   Constant
   hi link mailURL	    CommentURL
@@ -183,6 +184,10 @@ if &background == "dark"
   " https://github.com/kien/ctrlp.vim
   hi CtrlPMatch       guifg=#000000 guibg=#f8cf00 gui=none
 
+  " https://github.com/dyng/ctrlsf.vim
+  hi CtrlsfLnumMatch guifg=#0087d7
+  hi CtrlsfMatch     guibg=#ffd700 guifg=#000000
+  
   " https://github.com/ervandew/eclim
   hi EclimError   guibg=#303030 guifg=#f92672
   hi EclimWarning guibg=#303030 guifg=#FFFF00
@@ -195,12 +200,15 @@ if &background == "dark"
   " https://github.com/scrooloose/nerdtree
   hi NERDTreeDir      guifg=#5d8fbe ctermfg=67
   hi link NERDTreeDirSlash NERDTreeDir
-  hi link NERDTreeOpenable NERDTreeDir
-  hi NERDTreeClosable guifg=#66b600 guibg=#385038 gui=bold ctermfg=70 ctermbg=22 cterm=bold
+  hi NERDTreeOpenable guifg=#5d8fbe guibg=#404042 gui=bold ctermfg=70 ctermbg=22 cterm=bold
+  hi NERDTreeClosable guifg=#5d8fbe guibg=#404042 gui=bold ctermfg=70 ctermbg=22 cterm=bold
   hi NERDTreePart     guifg=#707070 ctermfg=243
   hi NERDTreePartFile guifg=#FFFFFF gui=bold ctermfg=231 cterm=bold
   hi NERDTreeLinkFile guifg=#ffaf00 ctermfg=214
   hi NERDTreeLinkDir  guifg=#ffaf00 ctermfg=214
+  hi NERDTreeBookmarkName gui=bold ctermbg=4 guifg=#afd700
+  hi NERDTreeBookmark     ctermbg=4 guifg=#797772
+  hi NERDTreeBookmarksLeader guifg=#404042 guibg=#404042
 
   " https://github.com/tomtom/quickfixsigns_vim
   if g:grimmjow_recolor_quickfixsigns == 1
@@ -227,6 +235,15 @@ if &background == "dark"
   hi TagbarScope      guifg=#0087d7 gui=bold ctermfg=32 cterm=bold
   hi TagbarType       guifg=#66b600 gui=bold ctermfg=70 cterm=bold
   hi TagbarKind       guifg=#7ad6ff ctermfg=117
+
+  " https://github.com/Lokaltog/vim-easymotion
+  hi EasyMotionTarget        ctermbg=none ctermfg=green guifg=#A6E22E
+  hi EasyMotionTarget2First  ctermbg=none ctermfg=green guifg=#F92672
+  hi EasyMotionTarget2Second ctermbg=none ctermfg=green guifg=#1994d1
+  
+  " https://github.com/nathanaelkane/vim-indent-guides
+  hi IndentGuidesEven guifg=#a0a0a0 guibg=#797772
+  hi IndentGuidesOdd  guifg=#797772 guibg=#a0a0a0
 
   " https://github.com/qstrahl/vim-matchmaker
   hi Matchmaker gui=underline
@@ -521,8 +538,10 @@ else
   hi link djangoVarBlock DjangoBlock
   hi link djangoFilter   Typedef
 
+  " Markdown
   hi markdownUrl guifg=#005faf gui=underline ctermfg=25 cterm=underline
 
+  " Mail
   hi link mailHeader  Comment
   hi link mailSubject Constant
   hi link mailURL	  CommentURL
@@ -545,6 +564,10 @@ else
   " https://github.com/kien/ctrlp.vim
   hi link CtrlPMatch Search
 
+  " https://github.com/dyng/ctrlsf.vim
+  hi CtrlsfLnumMatch guifg=#0087d7
+  hi CtrlsfMatch     guibg=#ffd700 guifg=#000000
+  
   " https://github.com/ervandew/eclim
   hi EclimError   guibg=#c9c4c4 guifg=#f92672
   hi EclimWarning guibg=#c9c4c4 guifg=#FFFF00
@@ -593,6 +616,11 @@ else
   hi TagbarType         guifg=#66b600 gui=bold ctermfg=70 cterm=bold
   hi TagbarKind         guifg=#0087d7 ctermfg=21
   hi TagbarAccessPublic guifg=#66b600  
+  
+  " https://github.com/Lokaltog/vim-easymotion
+  hi EasyMotionTarget        ctermbg=none ctermfg=green guifg=#108f4f gui=bold
+  hi EasyMotionTarget2First  ctermbg=none ctermfg=green guifg=#F92672 gui=bold
+  hi EasyMotionTarget2Second ctermbg=none ctermfg=green guifg=#1994d1 gui=bold
   
   " https://github.com/nathanaelkane/vim-indent-guides
   hi IndentGuidesEven guifg=#c6c7c6 guibg=#dcdedc
@@ -724,8 +752,5 @@ else
     hi DjangoBlock cterm=bold ctermfg=22
   endif
 endif
-
-
-
 
 
