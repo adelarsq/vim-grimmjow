@@ -1,7 +1,7 @@
 Vim Colorscheme: grimmjow
 =========================
 
-Version 0.0.6
+Version 0.0.7
 
 The colorscheme with gvim, macvim and [neovim](https://github.com/neovim/neovim).
 

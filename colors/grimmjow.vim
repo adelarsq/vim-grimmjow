@@ -1,8 +1,8 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Name:           grimmjow
 " Author:         Adelar S. Queiroz
-" Version:        0.0.6
-" Last Change:    2016.05.09
+" Version:        0.0.7
+" Last Change:    2016.05.10
 " URL:            https://github.com/adelarsq/vim-grimmjow
 " License:        Apache 2.0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -91,7 +91,7 @@ if &background == "dark"
 
   " User interface ############################################################
   
-  hi Search           guifg=#000000 guibg=#b8ea00 gui=bold
+  hi Search           guifg=#000000 guibg=#00875f gui=bold
   hi IncSearch        guifg=#f8cf00 guibg=#000000
 
   hi Error            guifg=#e5a5a5 guibg=#602020 gui=bold,underline
@@ -474,7 +474,7 @@ else
   hi LineNr           guifg=#707070 guibg=#eaeaea gui=NONE
   hi MatchParen       guifg=#ffffff guibg=#ffd030 gui=none
 
-  hi Search           guifg=#000000 guibg=#b8ea00 gui=bold
+  hi Search           guifg=#000000 guibg=#ffff5f gui=bold
   hi IncSearch        guifg=#f8cf00 guibg=#000000
 
   hi StatusLine       guifg=#e0e0e0 guibg=#707070 gui=NONE
