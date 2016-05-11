@@ -1,7 +1,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Name:           grimmjow
 " Author:         Adelar S. Queiroz
-" Version:        0.0.7
+" Version:        0.0.8
 " Last Change:    2016.05.10
 " URL:            https://github.com/adelarsq/vim-grimmjow
 " License:        Apache 2.0
@@ -479,7 +479,6 @@ else
 
   hi StatusLine       guifg=#e0e0e0 guibg=#707070 gui=NONE
   hi StatusLineNC     guifg=#e0e0e0 guibg=#a0a0a0 gui=NONE
-  hi VertSplit        guifg=#000000 guibg=#c9c4c4 gui=NONE
   hi Folded           guifg=#707070 guibg=#e8e8e8 gui=NONE
   hi FoldColumn       guifg=#707070 guibg=#b0b0b0 gui=bold
 
@@ -494,6 +493,7 @@ else
   hi TabLineSel       guifg=#005f00 guibg=#afd700 gui=none
   hi TabLineFill      guifg=#303030 guibg=#a0a0a0 gui=none
 
+  hi VertSplit        guifg=#000000 guibg=#d6d6d6 gui=NONE
   hi SignColumn       guifg=#A6E22E guibg=#e0e0e0 
 
   hi Pmenu        guifg=#ffffff   guibg=#323232
