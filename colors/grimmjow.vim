@@ -1,7 +1,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Name:           grimmjow
 " Author:         Adelar S. Queiroz
-" Version:        0.0.8
+" Version:        0.0.9
 " Last Change:    2016.05.10
 " URL:            https://github.com/adelarsq/vim-grimmjow
 " License:        Apache 2.0
@@ -227,8 +227,8 @@ if &background == "dark"
   \}
 
   " https://github.com/scrooloose/syntastic
-  hi SyntasticErrorSign  guifg=#f92672 guibg=#e0e0e0
-  hi SyntasticWarningSign guifg=#afd700 guibg=#e0e0e0
+  hi SyntasticErrorSign  guifg=#f92672 guibg=#f5f5f5
+  hi SyntasticWarningSign guifg=#afd700 guibg=#f5f5f5
 
   " https://github.com/majutsushi/tagbar
   hi link TagbarSignature Comment
@@ -468,10 +468,10 @@ else
   hi VisualNOS                      guibg=#d8d8d8 gui=none
 
   hi Cursor           guifg=#F5F5F5 guibg=#444444 gui=NONE
-  hi CursorLineNr     guifg=#000000 guibg=#eaeaea gui=bold
+  hi CursorLineNr     guifg=#000000 guibg=#f5f5f5 gui=bold
   hi Cursorline                     guibg=#eaeaea
   hi CursorColumn                   guibg=#eaeaea
-  hi LineNr           guifg=#707070 guibg=#eaeaea gui=NONE
+  hi LineNr           guifg=#707070 guibg=#f5f5f5 gui=NONE
   hi MatchParen       guifg=#ffffff guibg=#ffd030 gui=none
 
   hi Search           guifg=#000000 guibg=#ffff5f gui=bold
@@ -493,8 +493,8 @@ else
   hi TabLineSel       guifg=#005f00 guibg=#afd700 gui=none
   hi TabLineFill      guifg=#303030 guibg=#a0a0a0 gui=none
 
-  hi VertSplit        guifg=#000000 guibg=#d6d6d6 gui=NONE
-  hi SignColumn       guifg=#005f00 guibg=#e0e0e0 
+  hi VertSplit        guifg=#a0a0a0 guibg=#f5f5f5 gui=NONE
+  hi SignColumn       guifg=#005f00 guibg=#f5f5f5 
 
   hi Pmenu        guifg=#ffffff   guibg=#323232
   hi PmenuSel     guifg=#ffffff   guibg=#1994d1
@@ -615,8 +615,8 @@ else
   \}
 
   " https://github.com/scrooloose/syntastic
-  hi SyntasticErrorSign  guifg=#f92672 guibg=#e0e0e0
-  hi SyntasticWarningSign guifg=#005faf guibg=#e0e0e0
+  hi SyntasticErrorSign  guifg=#f92672 guibg=#f5f5f5
+  hi SyntasticWarningSign guifg=#005faf guibg=#f5f5f5
 
   " https://github.com/majutsushi/tagbar
   hi link TagbarSignature Comment
@@ -646,14 +646,14 @@ else
   hi MBEVisibleActiveChanged guifg=#005f00 guibg=#afd700
 
   " https://github.com/kshenoy/vim-signature
-  hi SignatureMarkText guifg=#0087d7 guibg=#e0e0e0
+  hi SignatureMarkText guifg=#0087d7 guibg=#f5f5f5
 
   " https://github.com/mhinz/vim-signify
-  hi SignifySignAdd             guifg=#008700 guibg=#e0e0e0
-  hi SignifySignChange          guifg=#ff5f00 guibg=#e0e0e0
-  hi SignifySignChangeDelete    guifg=#ff5f00 guibg=#e0e0e0
-  hi SignifySignDelete          guifg=#ff0000 guibg=#e0e0e0
-  hi SignifySignDeleteFirstLine guifg=#ff0000 guibg=#e0e0e0
+  hi SignifySignAdd             guifg=#008700 guibg=#f5f5f5
+  hi SignifySignChange          guifg=#ff5f00 guibg=#f5f5f5
+  hi SignifySignChangeDelete    guifg=#ff5f00 guibg=#f5f5f5
+  hi SignifySignDelete          guifg=#ff0000 guibg=#f5f5f5
+  hi SignifySignDeleteFirstLine guifg=#ff0000 guibg=#f5f5f5
 
   " https://github.com/justinmk/vim-sneak
   hi SneakPluginTarget guibg=#ffaf00 guifg=#ffff00 gui=bold ctermbg=214 ctermfg=226 cterm=bold
