@@ -442,8 +442,8 @@ else
   
   hi Special	      guifg=#3a3a3a gui=none
   hi SpecialChar      guifg=#6a96ff gui=bold
-  hi SpecialKey	      guifg=#d8d8d8 guibg=#f5f7f5 ctermbg=243 ctermfg=237
-  hi NonText          guifg=#303030 guibg=#eaeaea gui=none
+  hi SpecialKey	      guifg=#999999 guibg=#f5f7f5 ctermbg=243 ctermfg=237
+  hi NonText          guifg=#999999 guibg=#f5f5f5 gui=none
  
   hi Conceal          guifg=#303030 guibg=#e0e8e0
 
