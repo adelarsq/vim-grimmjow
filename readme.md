@@ -22,8 +22,6 @@ Optimized for the following languages:
 * Ruby
 * Vim
 
-<img src="https://github.com/adelarsq/vim-grimmjow/blob/master/images/screenshot.png" width="75%">
-
 ## Installation
 
 ### [Vim-Plug](https://github.com/junegunn/vim-plug)
