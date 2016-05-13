@@ -447,9 +447,7 @@ else
  
   hi Conceal          guifg=#303030 guibg=#e0e8e0
 
-  " hi ColorColumn      guibg=#87D7FF
-  " hi ColorColumn      guibg=#eaeaea
-  hi ColorColumn      guibg=#e1f5ff term=reverse ctermbg=12
+  hi ColorColumn      guibg=#f0f0f0 term=reverse ctermbg=12
 
   hi DiffAdd                        guibg=#ddffdd 
   hi DiffChange                     guibg=#e8e8e8 
