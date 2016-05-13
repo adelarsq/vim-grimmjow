@@ -433,7 +433,7 @@ else
 
   " Misc syntax ###############################################################
   
-  hi Todo             guifg=#000000 guibg=#ffff00 gui=bold
+  hi Todo             guifg=#00af5f guibg=#f5f5f5 gui=bold
  
   hi Directory        guifg=#0060a0 guibg=NONE    gui=bold
   " html: special keywords in jscript: window log 
@@ -467,7 +467,7 @@ else
   hi Visual           guifg=#ffffff guibg=#398df0 gui=NONE
   hi VisualNOS                      guibg=#d8d8d8 gui=none
 
-  hi Cursor           guifg=#ffffff guibg=#ff0000 gui=NONE
+  hi Cursor           guifg=#F5F5F5 guibg=#444444 gui=NONE
   hi CursorLineNr     guifg=#000000 guibg=#eaeaea gui=bold
   hi Cursorline                     guibg=#eaeaea
   hi CursorColumn                   guibg=#eaeaea
@@ -494,7 +494,7 @@ else
   hi TabLineFill      guifg=#303030 guibg=#a0a0a0 gui=none
 
   hi VertSplit        guifg=#000000 guibg=#d6d6d6 gui=NONE
-  hi SignColumn       guifg=#A6E22E guibg=#e0e0e0 
+  hi SignColumn       guifg=#005f00 guibg=#e0e0e0 
 
   hi Pmenu        guifg=#ffffff   guibg=#323232
   hi PmenuSel     guifg=#ffffff   guibg=#1994d1
@@ -589,6 +589,14 @@ else
   hi NERDTreeBookmarkName gui=bold ctermbg=4 guifg=#07281c
   hi NERDTreeBookmark     ctermbg=4 guifg=#797772
   hi NERDTreeBookmarksLeader guifg=#f5f7f5 guibg=#f5f7f5
+  " NERDTress File highlighting
+  " Fonte: https://github.com/scrooloose/nerdtree/issues/433#issuecomment-92590696
+  function! GrimmjowNERDTreeHighlightFile(extension, fg, guifg)
+      exec 'au filetype nerdtree highlight ' . a:extension .' ctermfg='. a:fg .' guifg='. a:guifg
+      exec 'au filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+  endfunction
+  call GrimmjowNERDTreeHighlightFile('java' , 'cyan'    , '#d80050')
+  call GrimmjowNERDTreeHighlightFile('sql'  , 'cyan'    , '#a444ff')
 
   " https://github.com/tomtom/quickfixsigns_vim
   if g:grimmjow_recolor_quickfixsigns == 1
@@ -608,7 +616,7 @@ else
 
   " https://github.com/scrooloose/syntastic
   hi SyntasticErrorSign  guifg=#f92672 guibg=#e0e0e0
-  hi SyntasticWarningSign guifg=#afd700 guibg=#e0e0e0
+  hi SyntasticWarningSign guifg=#005faf guibg=#e0e0e0
 
   " https://github.com/majutsushi/tagbar
   hi link TagbarSignature Comment
