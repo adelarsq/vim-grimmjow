@@ -1,6 +1,5 @@
-Copyright 2014 Arthur Jaron. All rights reserved.
 
-vim-kalisi is licensed under the terms of the Apache 2.0 license.
+vim-grimmjow is licensed under the terms of the Apache 2.0 license.
 
                                  Apache License
                            Version 2.0, January 2004
@@ -274,3 +273,4 @@ IV)  It is not allowed to remove this license from the distribution of the Vim
      sources, parts of it or from a modified version.  You may use this
      license for previous Vim releases instead of the license that they came
      with, at your option.
+

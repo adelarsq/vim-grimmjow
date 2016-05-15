@@ -1,8 +1,8 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Name:           grimmjow
 " Author:         Adelar S. Queiroz
-" Version:        0.0.9
-" Last Change:    2016.05.10
+" Version:        0.0.10
+" Last Change:    2016.05.15
 " URL:            https://github.com/adelarsq/vim-grimmjow
 " License:        Apache 2.0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -447,7 +447,7 @@ else
  
   hi Conceal          guifg=#303030 guibg=#e0e8e0
 
-  hi ColorColumn      guibg=#f0f0f0 term=reverse ctermbg=12
+  hi ColorColumn      guibg=#f0f0f0 term=reverse ctermbg=254
 
   hi DiffAdd                        guibg=#ddffdd 
   hi DiffChange                     guibg=#e8e8e8 
@@ -461,7 +461,6 @@ else
 
   " User interface ############################################################
 
-  " hi Visual                         guibg=#d0eeff gui=NONE
   hi Visual           guifg=#ffffff guibg=#398df0 gui=NONE
   hi VisualNOS                      guibg=#d8d8d8 gui=none
 
@@ -499,6 +498,7 @@ else
   hi PmenuSbar    guifg=#323232   guibg=#323232
   hi PmenuThumb   guifg=#646464   guibg=#646464   gui=none
 
+  " hi Visual                         guibg=#d0eeff gui=NONE
   " Language Specific ##########################################################
   
   " C
@@ -519,8 +519,6 @@ else
 
   "  Ruby
   hi rubyInterpolation      guifg=#ff4040 guibg=NONE gui=NONE
-  "hi rubyMethodBlock        guifg=#ff8da1 guibg=NONE gui=NONE
-  "hi rubyMethodBlock        guifg=#8ddaff guibg=NONE gui=NONE
   hi rubyMethodBlock        guifg=#ffb28d guibg=NONE gui=NONE
   hi rubyCurlyBlock         guifg=#f64a8a guibg=NONE gui=NONE
   hi rubyDoBlock            guifg=#f64a8a guibg=NONE gui=NONE
@@ -578,14 +576,14 @@ else
   " https://github.com/scrooloose/nerdtree
   hi NERDTreeDir          guifg=#0087d7 gui=bold ctermfg=32 cterm=bold
   hi link NERDTreeDirSlash NERDTreeDir
-  hi NERDTreeOpenable     guifg=#0087d7 guibg=#f5f7f5 gui=bold ctermfg=28 ctermbg=77 cterm=bold
-  hi NERDTreeClosable     guifg=#0087d7 guibg=#f5f7f5 gui=bold ctermfg=28 ctermbg=77 cterm=bold
+  hi NERDTreeOpenable     guifg=#0087d7 guibg=#f5f7f5 gui=bold ctermfg=28 ctermbg=255 cterm=bold
+  hi NERDTreeClosable     guifg=#0087d7 guibg=#f5f7f5 gui=bold ctermfg=28 ctermbg=255 cterm=bold
   hi NERDTreePart         guifg=#c0c0c0 ctermfg=250
   hi NERDTreePartFile     guifg=#000000 gui=bold ctermfg=16 cterm=bold
   hi NERDTreeLinkFile     guifg=#ffaf00 ctermfg=214
   hi NERDTreeLinkDir      guifg=#ffaf00 ctermfg=214
-  hi NERDTreeBookmarkName gui=bold ctermbg=4 guifg=#07281c
-  hi NERDTreeBookmark     ctermbg=4 guifg=#797772
+  hi NERDTreeBookmarkName gui=bold ctermbg=255 guifg=#07281c
+  hi NERDTreeBookmark     ctermbg=255 guifg=#797772
   hi NERDTreeBookmarksLeader guifg=#f5f7f5 guibg=#f5f7f5
   " NERDTress File highlighting
   " Fonte: https://github.com/scrooloose/nerdtree/issues/433#issuecomment-92590696
@@ -658,10 +656,10 @@ else
   hi link SneakPluginScope Visual
 
   " https://github.com/mhinz/vim-startify
-  hi StartifyBracket ctermfg=240 guifg=#5DC2D6 guibg=NONE gui=bold ctermfg=45 ctermbg=24 cterm=bold
+  hi StartifyBracket ctermfg=240 guifg=#5DC2D6 guibg=NONE gui=bold ctermfg=45 ctermbg=255 cterm=bold
   hi StartifyFile    ctermfg=26  guifg=#008700 gui=bold
   hi StartifyHeader  ctermfg=203 guifg=#1060a0
-  hi StartifyNumber  ctermfg=215 guifg=#005faf guibg=NONE gui=bold ctermfg=46 ctermbg=24 cterm=bold
+  hi StartifyNumber  ctermfg=215 guifg=#005faf guibg=NONE gui=bold ctermfg=240 ctermbg=255 cterm=bold
   hi StartifyPath    ctermfg=245 guifg=#66b600
   hi StartifySlash   ctermfg=240 guifg=#66b600
   hi StartifySpecial  guifg=#666666 guibg=#d7d7d7 ctermfg=242 ctermbg=252
@@ -713,7 +711,7 @@ else
     hi Directory cterm=bold ctermfg=25
     hi Keyword ctermfg=70
     hi Title cterm=bold ctermfg=25
-    hi NonText ctermbg=253 ctermfg=16
+    hi NonText ctermbg=255 ctermfg=16
     hi Conceal ctermbg=253 ctermfg=236
     hi DiffAdd ctermbg=194
     hi DiffChange ctermbg=254
@@ -726,13 +724,13 @@ else
     hi Visual ctermbg=153
     hi VisualNOS ctermbg=253
     hi Cursor ctermbg=196 ctermfg=231
-    hi CursorLineNr cterm=bold ctermbg=251 ctermfg=254
+    hi CursorLineNr cterm=bold ctermbg=255 ctermfg=16
     hi CursorLine ctermbg=254 cterm=none
     hi CursorColumn ctermbg=254
     hi MatchParen ctermbg=221 ctermfg=231
     hi Search cterm=bold ctermbg=148 ctermfg=16
     hi IncSearch cterm=reverse ctermbg=16 ctermfg=220
-    hi LineNr ctermbg=253 ctermfg=242
+    hi LineNr ctermbg=255 ctermfg=242
     hi StatusLine ctermfg=254 ctermbg=242 term=NONE cterm=NONE
     hi StatusLineNC ctermbg=247 ctermfg=254 term=NONE cterm=NONE
     hi VertSplit ctermbg=247 ctermfg=247
@@ -746,7 +744,7 @@ else
     hi TabLine ctermbg=22 ctermfg=148 cterm=none
     hi TabLineSel ctermbg=148 ctermfg=22 cterm=none
     hi TabLineFill ctermbg=247 ctermfg=236 cterm=none
-    hi SignColumn ctermbg=251 ctermfg=148
+    hi SignColumn ctermbg=255 ctermfg=148
     hi Pmenu ctermbg=254 ctermfg=16
     hi PmenuSel cterm=bold ctermbg=148 ctermfg=16
     hi PmenuSbar ctermbg=247
