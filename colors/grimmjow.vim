@@ -627,8 +627,8 @@ else
   hi EasyMotionTarget2Second ctermbg=none ctermfg=green guifg=#1994d1 gui=bold
   
   " https://github.com/nathanaelkane/vim-indent-guides
-  hi IndentGuidesEven guifg=#c6c7c6 guibg=#dcdedc
-  hi IndentGuidesOdd  guifg=#dcdedc guibg=#c6c7c6
+  hi IndentGuidesEven guifg=#dcdedc guibg=#e9e9e9 
+  hi IndentGuidesOdd  guifg=#e9e9e9 guibg=#dcdedc
 
   " https://github.com/qstrahl/vim-matchmaker
   hi Matchmaker gui=underline
