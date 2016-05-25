@@ -1,8 +1,8 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Name:           grimmjow
 " Author:         Adelar S. Queiroz
-" Version:        0.0.10
-" Last Change:    2016.05.15
+" Version:        0.0.11
+" Last Change:    2016.05.24
 " URL:            https://github.com/adelarsq/vim-grimmjow
 " License:        Apache 2.0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -553,7 +553,13 @@ else
   hi mailSignature    ctermfg=209 guifg=#ff0000
 
   " Plugins ####################################################################
-  
+
+  " https://github.com/jlanzarotta/bufexplorer
+  hi bufExplorerHidBuf guifg=#878787
+  hi bufExplorerAltBuf guifg=#878787 gui=bold
+  hi bufExplorerActBuf guifg=#005faf
+  hi bufExplorerCurBuf guifg=#005faf gui=bold
+
   " https://github.com/rhysd/clever-f.vim
   hi CleverFDefaultLabel guibg=#ffd700 guifg=#000000 gui=bold ctermbg=220 ctermfg=16 cterm=bold
 
@@ -565,9 +571,9 @@ else
   hi CtrlsfMatch     guibg=#ffd700 guifg=#000000
   
   " https://github.com/ervandew/eclim
-  hi EclimError   guibg=#c9c4c4 guifg=#f92672
-  hi EclimWarning guibg=#c9c4c4 guifg=#FFFF00
-  hi EclimInfo    guibg=#c9c4c4 guifg=#afd700
+  hi EclimError   guibg=#f5f5f5 guifg=#f92672
+  hi EclimWarning guibg=#f5f5f5 guifg=#FFFF00
+  hi EclimInfo    guibg=#f5f5f5 guifg=#afd700
   
   " https://github.com/davidhalter/jedi-vim
   hi jediFunction     guibg=#878787 guifg=#f0f0f0 ctermbg=244 ctermfg=255

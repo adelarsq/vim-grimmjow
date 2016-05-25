@@ -1,7 +1,7 @@
 Vim Colorscheme: grimmjow
 =========================
 
-Version 0.0.10
+Version 0.0.11
 
 The colorscheme with gvim, macvim and [neovim](https://github.com/neovim/neovim).
 
@@ -77,6 +77,7 @@ About
 
 Explicitly supported plugins:
 
+* [bufexplorer](https://github.com/jlanzarotta/bufexplorer)
 * [clever-f.vim](https://github.com/rhysd/clever-f.vim)
 * [ctrlp.vim](https://github.com/kien/ctrlp.vim)
 * [ctrlsf.vim](https://github.com/dyng/ctrlsf.vim)
