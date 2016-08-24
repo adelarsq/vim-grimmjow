@@ -498,7 +498,6 @@ else
   hi PmenuSbar    guifg=#323232   guibg=#323232
   hi PmenuThumb   guifg=#646464   guibg=#646464   gui=none
 
-  " hi Visual                         guibg=#d0eeff gui=NONE
   " Language Specific ##########################################################
   
   " C
