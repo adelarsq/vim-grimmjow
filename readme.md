@@ -6,7 +6,6 @@ Light colorscheme for gvim, macvim and [neovim](https://github.com/neovim/neovim
 
 Main features:
 
-* Light Theme
 * 256 color terminal support
 * Support for several plugins
 
