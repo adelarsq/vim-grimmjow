@@ -1,14 +1,12 @@
-Vim Colorscheme: grimmjow
-=========================
+# Vim Colorscheme: grimmjow
 
-Version 0.0.11
+Version 0.0.13
 
-The colorscheme with gvim, macvim and [neovim](https://github.com/neovim/neovim).
+Light colorscheme for gvim, macvim and [neovim](https://github.com/neovim/neovim).
 
 Main features:
 
 * Light Theme
-* Dark Theme
 * 256 color terminal support
 * Support for several plugins
 
@@ -72,8 +70,7 @@ Optimized for the following languages:
         let &t_AB="\e[48;5;%dm"
         let &t_AF="\e[38;5;%dm"
 
-About
-======
+## About
 
 Explicitly supported plugins:
 
@@ -91,6 +88,7 @@ Explicitly supported plugins:
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion)
 * [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
 * [vim-matchmaker](https://github.com/qstrahl/vim-matchmaker)
+* [vim-nerdtree-syntax-highlight](https://github.com/tiagofumo/vim-nerdtree-syntax-highlight)
 * [vim-plugin-minibufexpl](https://github.com/weynhamz/vim-plugin-minibufexpl)
 * [vim-signify](https://github.com/mhinz/vim-signify)
 * [vim-sneak](https://github.com/justinmk/vim-sneak)
