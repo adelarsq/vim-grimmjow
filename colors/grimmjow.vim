@@ -79,9 +79,9 @@ hi Directory        guifg=#0060a0 guibg=NONE    gui=bold
 hi Keyword          guifg=#66b600               gui=none
 hi Title            guifg=#1060a0 guibg=NONE    gui=bold
 
-hi Special	      guifg=#3a3a3a gui=none
+hi Special	        guifg=#3a3a3a gui=none
 hi SpecialChar      guifg=#6a96ff gui=bold
-hi SpecialKey	      guifg=#999999 guibg=#f5f7f5 ctermbg=243 ctermfg=237
+hi SpecialKey	    guifg=#999999 guibg=#f5f7f5 ctermbg=243 ctermfg=237
 hi NonText          guifg=#999999 guibg=#f5f5f5 gui=none
 
 hi Conceal          guifg=#303030 guibg=#e0e8e0
@@ -104,14 +104,17 @@ hi Visual           guifg=#ffffff guibg=#398df0 gui=NONE
 hi VisualNOS                      guibg=#d8d8d8 gui=none
 
 hi Cursor           guifg=#F5F5F5 guibg=#444444 gui=NONE
-hi CursorLineNr     guifg=#000000 guibg=#f5f5f5 gui=bold
-hi Cursorline                     guibg=#eaeaea
+hi CursorLineNr     guifg=#000000 guibg=#ffffff gui=bold
+hi Cursorline                     guibg=#efefef
 hi CursorColumn                   guibg=#eaeaea
-hi LineNr           guifg=#707070 guibg=#f5f5f5 gui=NONE
+hi LineNr           guifg=#707070 guibg=#f5f7f5 gui=NONE
 hi MatchParen       guifg=#ffffff guibg=#ffd030 gui=none
+hi VertSplit        guifg=#a0a0a0 guibg=#f7f9f7 gui=NONE
+hi SignColumn       guifg=#005f00 guibg=#f5f7f5 
 
-hi Search           guifg=#000000 guibg=#ffff5f gui=bold
+hi Search           guifg=#ffffff guibg=#4cbe13
 hi IncSearch        guifg=#f8cf00 guibg=#000000
+
 
 hi StatusLine       guifg=#e0e0e0 guibg=#707070 gui=NONE
 hi StatusLineNC     guifg=#e0e0e0 guibg=#a0a0a0 gui=NONE
@@ -128,9 +131,6 @@ hi WarningMsg       guifg=#d82020 guibg=NONE    gui=bold
 hi TabLine          guifg=#afd700 guibg=#005f00 gui=none
 hi TabLineSel       guifg=#005f00 guibg=#afd700 gui=none
 hi TabLineFill      guifg=#303030 guibg=#a0a0a0 gui=none
-
-hi VertSplit        guifg=#a0a0a0 guibg=#f5f5f5 gui=NONE
-hi SignColumn       guifg=#005f00 guibg=#f5f5f5 
 
 hi Pmenu        guifg=#ffffff   guibg=#323232
 hi PmenuSel     guifg=#ffffff   guibg=#1994d1
@@ -247,8 +247,8 @@ let g:rainbow_conf = {
             \}
 
 " https://github.com/scrooloose/syntastic
-hi SyntasticErrorSign  guifg=#f92672 guibg=#f5f5f5
-hi SyntasticWarningSign guifg=#005faf guibg=#f5f5f5
+hi SyntasticErrorSign  guibg=#f92672 guifg=#f5f5f5
+hi SyntasticWarningSign guibg=#005faf guifg=#f5f5f5
 
 " https://github.com/majutsushi/tagbar
 hi link TagbarSignature Comment
@@ -333,11 +333,11 @@ hi MBEVisibleActiveChanged guifg=#005f00 guibg=#afd700
 hi SignatureMarkText guifg=#0087d7 guibg=#f5f5f5
 
 " https://github.com/mhinz/vim-signify
-hi SignifySignAdd             guifg=#008700 guibg=#f5f5f5
-hi SignifySignChange          guifg=#ff5f00 guibg=#f5f5f5
-hi SignifySignChangeDelete    guifg=#ff5f00 guibg=#f5f5f5
-hi SignifySignDelete          guifg=#ff0000 guibg=#f5f5f5
-hi SignifySignDeleteFirstLine guifg=#ff0000 guibg=#f5f5f5
+hi SignifySignAdd             guifg=#008700 guibg=#afd700
+hi SignifySignChange          guifg=#666666 guibg=#ffb340
+hi SignifySignChangeDelete    guifg=#666666 guibg=#ffb340
+hi SignifySignDelete          guifg=#333333 guibg=#ff6070
+hi SignifySignDeleteFirstLine guifg=#333333 guibg=#ff6070
 
 " https://github.com/justinmk/vim-sneak
 hi SneakPluginTarget guibg=#ffaf00 guifg=#ffff00 gui=bold ctermbg=214 ctermfg=226 cterm=bold
