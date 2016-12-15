@@ -1,8 +1,8 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Name:           grimmjow
 " Author:         Adelar S. Queiroz
-" Version:        0.0.13
-" Last Change:    2016.08.24
+" Version:        0.0.15
+" Last Change:    2016.12.03
 " URL:            https://github.com/adelarsq/vim-grimmjow
 " License:        Apache 2.0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -16,8 +16,7 @@ hi clear
 let g:colors_name = "grimmjow"
 set background=light
 
-" hi Normal           guifg=#444444 guibg=#f5f5f5 gui=NONE
-hi Normal           guifg=#444444 guibg=#ffffff gui=NONE
+hi Normal           guifg=#444444 guibg=#f5f5f5 gui=NONE
 
 " Syntax ####################################################################
 
@@ -69,7 +68,6 @@ hi Underlined       guifg=#202020 guibg=NONE    gui=underline
 hi Error            guifg=#d80000 guibg=#d8d0d0 gui=bold,underline
 hi ErrorMsg         guifg=#d80000 guibg=#d8d0d0 gui=bold
 
-
 " Misc syntax ###############################################################
 
 hi Todo             guifg=#00af5f guibg=#f5f5f5 gui=bold
@@ -104,13 +102,13 @@ hi Visual           guifg=#ffffff guibg=#398df0 gui=NONE
 hi VisualNOS                      guibg=#d8d8d8 gui=none
 
 hi Cursor           guifg=#F5F5F5 guibg=#444444 gui=NONE
-hi CursorLineNr     guifg=#000000 guibg=#ffffff gui=bold
-hi Cursorline                     guibg=#efefef
-hi CursorColumn                   guibg=#eaeaea
-hi LineNr           guifg=#707070 guibg=#f5f7f5 gui=NONE
+hi CursorLineNr     guifg=#000000 guibg=#e1e1e1 gui=bold
+hi Cursorline                     guibg=#e1e1e1 gui=none
+hi CursorColumn                   guibg=#e1e1e1 gui=none
+hi LineNr           guifg=#707070 guibg=#ffffff gui=NONE
 hi MatchParen       guifg=#ffffff guibg=#ffd030 gui=none
-hi VertSplit        guifg=#a0a0a0 guibg=#f7f9f7 gui=NONE
-hi SignColumn       guifg=#005f00 guibg=#f5f7f5 
+hi VertSplit        guifg=#a0a0a0 guibg=#f5f5f5 gui=NONE
+hi SignColumn       guifg=#005f00 guibg=#ffffff 
 
 hi Search           guifg=#ffffff guibg=#4cbe13
 hi IncSearch        guifg=#f8cf00 guibg=#000000
@@ -242,13 +240,13 @@ endif
 
 " https://github.com/luochen1990/rainbow
 let g:rainbow_conf = {
-            \	'guifgs': ['royalblue3', 'darkorange3', '#108f4f', 'firebrick'],
+            \	'guifgs': ['#0087d7', '#1097e7', '#20a7f7', '#40c7f7'],
             \	'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
             \}
 
 " https://github.com/scrooloose/syntastic
-hi SyntasticErrorSign  guibg=#f92672 guifg=#f5f5f5
-hi SyntasticWarningSign guibg=#005faf guifg=#f5f5f5
+hi SyntasticErrorSign  guibg=#ffffff guifg=#f5f5f5
+hi SyntasticWarningSign guibg=#ffffff guifg=#f5f5f5
 
 " https://github.com/majutsushi/tagbar
 hi link TagbarSignature Comment
@@ -330,7 +328,7 @@ hi MBEVisibleActiveNormal  guifg=#005f00 guibg=#afd700
 hi MBEVisibleActiveChanged guifg=#005f00 guibg=#afd700
 
 " https://github.com/kshenoy/vim-signature
-hi SignatureMarkText guifg=#0087d7 guibg=#f5f5f5
+hi SignatureMarkText guifg=#0087d7 guibg=#ffffff
 
 " https://github.com/mhinz/vim-signify
 hi SignifySignAdd             guifg=#008700 guibg=#afd700
