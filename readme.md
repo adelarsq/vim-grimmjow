@@ -1,6 +1,6 @@
 # Vim Colorscheme: grimmjow
 
-Version 0.0.13
+Version 0.0.16
 
 Light colorscheme for gvim, macvim and [neovim](https://github.com/neovim/neovim).
 
@@ -28,10 +28,6 @@ Optimized for the following languages:
         Plug 'https://github.com/adelarsq/vim-grimmjow'
 
         colorscheme grimmjow
-        set background=light
-        " or 
-        set background=dark
-        " if you don't set the background, the light theme will be used
 
 2. Run
 
