@@ -85,6 +85,7 @@ Explicitly supported plugins:
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion)
 * [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
 * [vim-matchmaker](https://github.com/qstrahl/vim-matchmaker)
+* [vim-minimap](https://github.com/severin-lemaignan/vim-minimap)
 * [vim-nerdtree-syntax-highlight](https://github.com/tiagofumo/vim-nerdtree-syntax-highlight)
 * [vim-plugin-minibufexpl](https://github.com/weynhamz/vim-plugin-minibufexpl)
 * [vim-signify](https://github.com/mhinz/vim-signify)
