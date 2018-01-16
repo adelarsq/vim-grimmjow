@@ -1,6 +1,6 @@
 # Vim Colorscheme: grimmjow
 
-Version 0.0.16
+Version 0.0.20
 
 Light colorscheme for gvim, macvim and [neovim](https://github.com/neovim/neovim).
 
@@ -69,6 +69,7 @@ Optimized for the following languages:
 
 Explicitly supported plugins:
 
+* [ale](https://github.com/w0rp/ale)
 * [bufexplorer](https://github.com/jlanzarotta/bufexplorer)
 * [clever-f.vim](https://github.com/rhysd/clever-f.vim)
 * [ctrlp.vim](https://github.com/kien/ctrlp.vim)
@@ -80,6 +81,7 @@ Explicitly supported plugins:
 * [rainbow](https://github.com/luochen1990/rainbow)
 * [tagbar](https://github.com/majutsushi/tagbar)
 * [undotree](https://github.com/mbbill/undotree)
+* [vim-bookmarks](https://github.com/MattesGroeger/vim-bookmarks)
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion)
 * [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
 * [vim-matchmaker](https://github.com/qstrahl/vim-matchmaker)

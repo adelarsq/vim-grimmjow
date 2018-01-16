@@ -1,24 +1,27 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Name:           grimmjow
 " Author:         Adelar S. Queiroz
-" Version:        0.0.15
-" Last Change:    2016.12.03
+" Version:        0.0.20
+" Last Change:    2018.01.14
 " URL:            https://github.com/adelarsq/vim-grimmjow
 " License:        Apache 2.0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Settings
+" --------
+
 if !exists('g:grimmjow_recolor_quickfixsigns')
   let g:grimmjow_recolor_quickfixsigns = 1
 endif
 
 hi clear
-let g:colors_name = "grimmjow"
+let g:colors_name = 'grimmjow'
 set background=light
 
 hi Normal           guifg=#444444 guibg=#f5f5f5 gui=NONE
 
-" Syntax ####################################################################
+" Syntax
+" ------
 
 hi Comment          guifg=#70a0d0 guibg=NONE    gui=NONE
 " TODO avoid background glitch 
@@ -68,12 +71,12 @@ hi Underlined       guifg=#202020 guibg=NONE    gui=underline
 hi Error            guifg=#d80000 guibg=#d8d0d0 gui=bold,underline
 hi ErrorMsg         guifg=#d80000 guibg=#d8d0d0 gui=bold
 
-" Misc syntax ###############################################################
+" Misc syntax
+" -----------
 
 hi Todo             guifg=#00af5f guibg=#f5f5f5 gui=bold
 
 hi Directory        guifg=#0060a0 guibg=NONE    gui=bold
-" html: special keywords in jscript: window log 
 hi Keyword          guifg=#66b600               gui=none
 hi Title            guifg=#1060a0 guibg=NONE    gui=bold
 
@@ -96,7 +99,8 @@ hi SpellCap         guisp=#274aac gui=undercurl
 hi SpellLocal       guisp=#006600 gui=undercurl
 hi SpellRare        guisp=#555555 gui=undercurl
 
-" User interface ############################################################
+" User interface
+" --------------
 
 hi Visual           guifg=#ffffff guibg=#398df0 gui=NONE
 hi VisualNOS                      guibg=#d8d8d8 gui=none
@@ -126,16 +130,17 @@ hi MoreMsg          guifg=#000000 guibg=#A6DB29 gui=none
 hi ModeMsg          guifg=#000000 guibg=#A6DB29
 hi WarningMsg       guifg=#d82020 guibg=NONE    gui=bold
 
-hi TabLine          guifg=#afd700 guibg=#005f00 gui=none
-hi TabLineSel       guifg=#005f00 guibg=#afd700 gui=none
-hi TabLineFill      guifg=#303030 guibg=#a0a0a0 gui=none
+hi TabLine     term=underline ctermfg=8 ctermbg=10 guifg=#f5f5f5 guibg=#aaaaaa
+hi TabLineSel  gui=none guifg=#37474F guibg=#8AC6F2
+hi TabLineFill term=underline ctermfg=8 ctermbg=10 guibg=#323232 guifg=#f5f5f5
 
 hi Pmenu        guifg=#ffffff   guibg=#323232
 hi PmenuSel     guifg=#ffffff   guibg=#1994d1
 hi PmenuSbar    guifg=#323232   guibg=#323232
 hi PmenuThumb   guifg=#646464   guibg=#646464   gui=none
 
-" Language Specific ##########################################################
+" Language Specific
+" -----------------
 
 " C
 hi cType guifg=#66b600 ctermfg=70
@@ -188,7 +193,14 @@ hi mailQuoted7	  ctermfg=21  guifg=#5f5faf
 hi mailQuoted8	  ctermfg=101 guifg=#87875f
 hi mailSignature    ctermfg=209 guifg=#ff0000
 
-" Plugins ####################################################################
+" Plugins
+" -------
+
+" https://github.com/w0rp/ale
+hi ALEErrorSign gui=none guifg=#d80000 guibg=#ffffff
+hi ALEWarningSign gui=none guifg=#87d7ff guibg=#ffffff
+hi ALEErrorLine gui=none guifg=NONE guibg=NONE
+hi ALEWarningLine gui=none guifg=NONE guibg=NONE
 
 " https://github.com/jlanzarotta/bufexplorer
 hi bufExplorerHidBuf guifg=#878787
@@ -255,6 +267,11 @@ hi TagbarType         guifg=#66b600 gui=bold ctermfg=70 cterm=bold
 hi TagbarKind         guifg=#0087d7 ctermfg=21
 hi TagbarAccessPublic guifg=#66b600  
 
+" https://github.com/MattesGroeger/vim-bookmarks
+hi BookmarkSign ctermbg=NONE ctermfg=160 guifg=#FF2C4B guibg=#ffffff
+hi BookmarkAnnotationSign ctermbg=NONE ctermfg=160 guifg=#20BBFC guibg=#ffffff
+hi BookmarkLine ctermbg=194 ctermfg=NONE
+
 " https://github.com/Lokaltog/vim-easymotion
 hi EasyMotionTarget        ctermbg=none ctermfg=green guifg=#108f4f gui=bold
 hi EasyMotionTarget2First  ctermbg=none ctermfg=green guifg=#F92672 gui=bold
@@ -266,6 +283,9 @@ hi IndentGuidesOdd  guifg=#e9e9e9 guibg=#dcdedc
 
 " https://github.com/qstrahl/vim-matchmaker
 hi Matchmaker gui=underline
+
+" https://github.com/severin-lemaignan/vim-minimap 
+hi Minimap guibg=#a0a0a0 guifg=#e0e0e0
 
 " https://github.com/tiagofumo/vim-nerdtree-syntax-highlight
 let g:NERDTreeExtensionHighlightColor = {}
@@ -355,7 +375,7 @@ hi link StartifyFooter StartifyHeader
 hi UndotreeSavedBig ctermfg=245   guifg=#11AF46
 hi UndotreeSavedSmall ctermfg=240 guifg=#F1266F
 
-" 256 Color Terminal (light) ################################################
+" 256 Color Terminal (light)
 if &t_Co > 255
     hi Normal ctermbg=255 ctermfg=16
     hi Comment ctermfg=110
@@ -441,3 +461,4 @@ if &t_Co > 255
     hi javaScript ctermfg=59
     hi DjangoBlock cterm=bold ctermfg=22
 endif
+        
