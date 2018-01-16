@@ -43,9 +43,6 @@ Optimized for the following languages:
 
         colorscheme grimmjow
         set background=light
-        " or 
-        set background=dark
-        " if you don't set the background, the light theme will be used
 
 2. Run
 
@@ -97,7 +94,7 @@ The following colorschemes were influential for this theme: [vim-kalisi](https:/
 Thanks to https://github.com/godlygeek/csapprox, which helped greatly in
 bringing 256 color terminal support to this colorscheme!
 
-It contains two themes, one for each background setting (*light* and *dark*).
+It contains only theme for light background.
 The default colorscheme is *light*, as is Vims default setting, if you don't set the background manually.
 
 Suggestions for improving support for other programming languages and plugins are welcome!
