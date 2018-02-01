@@ -105,8 +105,8 @@ hi SpellRare        guisp=#555555 gui=undercurl
 hi Visual           guifg=#ffffff guibg=#398df0 gui=NONE
 hi VisualNOS                      guibg=#d8d8d8 gui=none
 
-hi Cursor           guifg=#F5F5F5 guibg=#444444 gui=NONE
-hi CursorLineNr     guifg=#000000 guibg=#e1e1e1 gui=bold
+hi Cursor           guifg=#F5F5F5 guibg=#37474F gui=NONE
+hi CursorLineNr     guifg=#37474F guibg=#e1e1e1 gui=bold
 hi Cursorline                     guibg=#e1e1e1 gui=none
 hi CursorColumn                   guibg=#e1e1e1 gui=none
 hi LineNr           guifg=#707070 guibg=#ffffff gui=NONE
@@ -115,7 +115,7 @@ hi VertSplit        guifg=#a0a0a0 guibg=#f5f5f5 gui=NONE
 hi SignColumn       guifg=#005f00 guibg=#ffffff 
 
 hi Search           guifg=#ffffff guibg=#4cbe13
-hi IncSearch        guifg=#f8cf00 guibg=#000000
+hi IncSearch        guifg=#f8cf00 guibg=#37474F
 
 
 hi StatusLine       guifg=#e0e0e0 guibg=#707070 gui=NONE
@@ -123,11 +123,11 @@ hi StatusLineNC     guifg=#e0e0e0 guibg=#a0a0a0 gui=NONE
 hi Folded           guifg=#707070 guibg=#e8e8e8 gui=NONE
 hi FoldColumn       guifg=#707070 guibg=#b0b0b0 gui=bold
 
-hi WildMenu         guifg=#000000 guibg=#A6DB29 gui=none
-hi Question         guifg=#000000 guibg=#A6DB29 gui=none
-hi MoreMsg          guifg=#000000 guibg=#A6DB29 gui=none
+hi WildMenu         guifg=#37474F guibg=#A6DB29 gui=none
+hi Question         guifg=#37474F guibg=#A6DB29 gui=none
+hi MoreMsg          guifg=#37474F guibg=#A6DB29 gui=none
 
-hi ModeMsg          guifg=#000000 guibg=#A6DB29
+hi ModeMsg          guifg=#37474F guibg=#A6DB29
 hi WarningMsg       guifg=#d82020 guibg=NONE    gui=bold
 
 hi TabLine     term=underline ctermfg=8 ctermbg=10 guifg=#f5f5f5 guibg=#aaaaaa
@@ -138,6 +138,8 @@ hi Pmenu        guifg=#ffffff   guibg=#323232
 hi PmenuSel     guifg=#ffffff   guibg=#1994d1
 hi PmenuSbar    guifg=#323232   guibg=#323232
 hi PmenuThumb   guifg=#646464   guibg=#646464   gui=none
+
+hi StatusLineTermNC term=reverse ctermfg=0 ctermbg=10 guifg=bg guibg=LightGreen
 
 " Language Specific
 " -----------------
@@ -209,14 +211,14 @@ hi bufExplorerActBuf guifg=#005faf
 hi bufExplorerCurBuf guifg=#005faf gui=bold
 
 " https://github.com/rhysd/clever-f.vim
-hi CleverFDefaultLabel guibg=#ffd700 guifg=#000000 gui=bold ctermbg=220 ctermfg=16 cterm=bold
+hi CleverFDefaultLabel guibg=#ffd700 guifg=#37474F gui=bold ctermbg=220 ctermfg=16 cterm=bold
 
 " https://github.com/kien/ctrlp.vim
 hi link CtrlPMatch Search
 
 " https://github.com/dyng/ctrlsf.vim
 hi CtrlsfLnumMatch guifg=#0087d7
-hi CtrlsfMatch     guibg=#ffd700 guifg=#000000
+hi CtrlsfMatch     guibg=#ffd700 guifg=#37474F
 
 " https://github.com/ervandew/eclim
 hi EclimError   guibg=#f5f5f5 guifg=#f92672
@@ -228,15 +230,15 @@ hi jediFunction     guibg=#878787 guifg=#f0f0f0 ctermbg=244 ctermfg=255
 hi jediFat          guibg=#878787 guifg=#afd700 gui=bold ctermbg=244 ctermfg=148 cterm=bold
 
 " https://github.com/scrooloose/nerdtree
-hi NERDTreeDir          guifg=#0087d7 gui=bold ctermfg=32 cterm=bold
-hi link NERDTreeDirSlash NERDTreeDir
-hi NERDTreeOpenable     guifg=#0087d7 guibg=#f5f7f5 gui=bold ctermfg=28 ctermbg=255 cterm=bold
-hi NERDTreeClosable     guifg=#0087d7 guibg=#f5f7f5 gui=bold ctermfg=28 ctermbg=255 cterm=bold
+hi NERDTreeDir          guifg=#008700 gui=bold ctermfg=32 cterm=bold
+hi NERDTreeDirSlash     guifg=#9F5151 gui=bold ctermfg=32 cterm=bold
+hi NERDTreeOpenable     guifg=#9F5151 guibg=#f5f7f5 gui=bold ctermfg=28 ctermbg=255 cterm=bold
+hi NERDTreeClosable     guifg=#9F5151 guibg=#f5f7f5 gui=bold ctermfg=28 ctermbg=255 cterm=bold
 hi NERDTreePart         guifg=#c0c0c0 ctermfg=250
-hi NERDTreePartFile     guifg=#000000 gui=bold ctermfg=16 cterm=bold
+hi NERDTreePartFile     guifg=#37474F gui=bold ctermfg=16 cterm=bold
 hi NERDTreeLinkFile     guifg=#ffaf00 ctermfg=214
 hi NERDTreeLinkDir      guifg=#ffaf00 ctermfg=214
-hi NERDTreeBookmarkName gui=bold ctermbg=255 guifg=#07281c
+hi NERDTreeBookmarkName gui=bold ctermbg=255 guifg=#37474F
 hi NERDTreeBookmark     ctermbg=255 guifg=#797772
 hi NERDTreeBookmarksLeader guifg=#f5f7f5 guibg=#f5f7f5
 
@@ -246,7 +248,7 @@ if g:grimmjow_recolor_quickfixsigns == 1
     hi QFSignsDiffAdd    guifg=#008700 guibg=#5fd75f ctermfg=28 ctermbg=77
     hi QFSignsDiffChange guifg=#5f5fd7 guibg=#afafff ctermfg=62 ctermbg=147
     hi QFSignsDiffDelete guifg=#ff5f00 guibg=#ffafaf ctermfg=202 ctermbg=217
-    let g:quickfixsigns#marks#texthl = "QFSignsMark"
+    let g:quickfixsigns#marks#texthl = 'QFSignsMark'
     let g:quickfixsigns#vcsdiff#highlight = {'DEL': 'QFSignsDiffDelete', 'ADD': 'QFSignsDiffAdd', 'CHANGE': 'QFSignsDiffChange'}
 endif
 
@@ -271,6 +273,28 @@ hi TagbarAccessPublic guifg=#66b600
 hi BookmarkSign ctermbg=NONE ctermfg=160 guifg=#FF2C4B guibg=#ffffff
 hi BookmarkAnnotationSign ctermbg=NONE ctermfg=160 guifg=#20BBFC guibg=#ffffff
 hi BookmarkLine ctermbg=194 ctermfg=NONE
+
+" https://github.com/t9md/vim-choosewin
+let g:choosewin_color_overlay = {
+    \ 'gui': ['#398df0', '#398df0' ],
+    \ 'cterm': [ 25, 25 ]
+    \ }
+let g:choosewin_color_overlay_current = {
+    \ 'gui': ['#ff6070', '#ff6070' ],
+    \ 'cterm': [ 124, 124 ]
+    \ }
+let g:choosewin_color_label = {
+    \ 'gui': ['#398df0', 'white', 'bold'],
+    \ 'cterm': [9, 16]
+    \ }
+let g:choosewin_color_label_current = {
+    \ 'gui': ['#ff6070', 'white', 'bold'],
+    \ 'cterm': [9, 16]
+    \ }
+let g:choosewin_color_other = {
+    \ 'gui': ['gray20', 'black'],
+    \ 'cterm': [240, 0]
+    \ }
 
 " https://github.com/Lokaltog/vim-easymotion
 hi EasyMotionTarget        ctermbg=none ctermfg=green guifg=#108f4f gui=bold
@@ -461,4 +485,3 @@ if &t_Co > 255
     hi javaScript ctermfg=59
     hi DjangoBlock cterm=bold ctermfg=22
 endif
-        
