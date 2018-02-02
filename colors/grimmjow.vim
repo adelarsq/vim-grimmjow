@@ -259,7 +259,7 @@ let g:rainbow_conf = {
             \}
 
 " https://github.com/jaxbot/semantic-highlight.vim
-let g:semanticGUIColors = [ '#36B636', '#8EC552', '#AEBE21', '#CAB600', '#DDA600', '#FFA215', '#FF5524', '#A0877E', '#7E96A0', '#CE7B00', '#FF4000', '#EE403C', '#EF4B47', '#EB3F7B', '#B65FC5', '#7852BE', '#FF9C09', '#5A69C0', '#4F72FF', '#10ABF5', '#22B7C8', '#4AB5AA', '#2DBB30', '#7AAE39', '#B1BD22', '#D58000' ]
+let g:semanticGUIColors = [ '#36B636', '#8EC552', '#AEBE21', '#CAB600', '#DDA600', '#FFA215', '#FF5524', '#A0877E', '#7E96A0', '#CE7B00', '#FF4000', '#EE403C', '#EF4B47', '#EB3F7B', '#B65FC5', '#7852BE', '#FF9C09', '#5A69C0', '#4F72FF', '#10ABF5', '#22B7C8', '#4AB5AA', '#2DBB30', '#7AAE39', '#7B8417', '#D58000' ]
 
 " https://github.com/scrooloose/syntastic
 hi SyntasticErrorSign  guibg=#ffffff guifg=#f5f5f5
