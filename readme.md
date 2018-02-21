@@ -89,7 +89,7 @@ Explicitly supported plugins:
 * [vim-sneak](https://github.com/justinmk/vim-sneak)
 * [vim-startify](https://github.com/mhinz/vim-startify)
 
-The following colorschemes were influential for this theme: [vim-kalisi](https://github.com/freeo/vim-kalisi), blackboard, github, molokai, pyte and winter.
+The following colorschemes were influential for this theme: [vim-kalisi](https://github.com/freeo/vim-kalisi), [blackboard](https://github.com/lisposter/vim-blackboard), [github](https://github.com/endel/vim-github-colorscheme), molokai, pyte and winter.
 
 Thanks to https://github.com/godlygeek/csapprox, which helped greatly in
 bringing 256 color terminal support to this colorscheme!
