@@ -305,6 +305,7 @@ hi EasyMotionTarget2First  ctermbg=none ctermfg=green guifg=#F92672 gui=bold
 hi EasyMotionTarget2Second ctermbg=none ctermfg=green guifg=#1994d1 gui=bold
 
 " https://github.com/nathanaelkane/vim-indent-guides
+let g:indent_guides_auto_colors = 0
 hi IndentGuidesEven guifg=#dcdedc guibg=#e9e9e9 
 hi IndentGuidesOdd  guifg=#e9e9e9 guibg=#dcdedc
 
