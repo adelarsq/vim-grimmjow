@@ -1,12 +1,13 @@
 # Vim Colorscheme: grimmjow
 
-Version 0.0.20
+Version 0.0.21
 
 Light colorscheme for gvim, macvim and [neovim](https://github.com/neovim/neovim).
 
 Main features:
 
 * 256 color terminal support
+* 24-bit color terminal support
 * Support for several plugins
 
 Optimized for the following languages:
@@ -26,7 +27,6 @@ Optimized for the following languages:
 1. Add this to your vimrc:
 
         Plug 'https://github.com/adelarsq/vim-grimmjow'
-
         colorscheme grimmjow
 
 2. Run
@@ -62,6 +62,14 @@ Optimized for the following languages:
         let &t_AB="\e[48;5;%dm"
         let &t_AF="\e[38;5;%dm"
 
+## 24-bit color terminal
+
+To configure vim to use 24-bit colors use this config on .vimrc:
+
+    if (has('termguicolors'))
+        set termguicolors
+    endif
+
 ## About
 
 Explicitly supported plugins:
@@ -73,6 +81,7 @@ Explicitly supported plugins:
 * [ctrlsf.vim](https://github.com/dyng/ctrlsf.vim)
 * [eclim](https://github.com/ervandew/eclim)
 * [jedi-vim](https://github.com/davidhalter/jedi-vim)
+* [keepeye.vim](https://github.com/soywod/keepeye.vim)
 * [nerdtree](https://github.com/scrooloose/nerdtree)
 * [quickfixsigns_vim](https://github.com/tomtom/quickfixsigns_vim)
 * [rainbow](https://github.com/luochen1990/rainbow)

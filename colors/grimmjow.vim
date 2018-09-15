@@ -229,6 +229,9 @@ hi EclimInfo    guibg=#f5f5f5 guifg=#afd700
 hi jediFunction     guibg=#878787 guifg=#f0f0f0 ctermbg=244 ctermfg=255
 hi jediFat          guibg=#878787 guifg=#afd700 gui=bold ctermbg=244 ctermfg=148 cterm=bold
 
+" https://github.com/soywod/keepeye.vim
+hi User1 guifg=#ffffff guibg=#ff6070
+
 " https://github.com/scrooloose/nerdtree
 hi NERDTreeDir          guifg=#008700 gui=bold ctermfg=32 cterm=bold
 hi NERDTreeDirSlash     guifg=#9F5151 gui=bold ctermfg=32 cterm=bold
