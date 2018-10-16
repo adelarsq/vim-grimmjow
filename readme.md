@@ -1,6 +1,6 @@
 # Vim Colorscheme: grimmjow
 
-Version 0.0.21
+Version 0.0.22
 
 Light colorscheme for gvim, macvim and [neovim](https://github.com/neovim/neovim).
 
