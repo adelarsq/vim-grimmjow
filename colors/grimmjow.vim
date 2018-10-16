@@ -112,7 +112,11 @@ hi CursorColumn                   guibg=#e1e1e1 gui=none
 hi LineNr           guifg=#707070 guibg=#ffffff gui=NONE
 hi MatchParen       guifg=#ffffff guibg=#ffd030 gui=none
 hi VertSplit        guifg=#a0a0a0 guibg=#f5f5f5 gui=NONE
-hi SignColumn       guifg=#005f00 guibg=#ffffff 
+hi SignColumn       guifg=#005f00 guibg=#ffffff
+
+if has('multi_byte_ime')
+   highlight CursorIM guifg=NONE guibg=Purple
+endif
 
 hi Search           guifg=#ffffff guibg=#4cbe13
 hi IncSearch        guifg=#f8cf00 guibg=#37474F
