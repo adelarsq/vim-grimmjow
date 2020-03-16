@@ -1,7 +1,5 @@
 # Vim Colorscheme: grimmjow
 
-Version 0.0.22
-
 Light colorscheme for gvim, macvim and [neovim](https://github.com/neovim/neovim).
 
 Main features:
@@ -97,6 +95,7 @@ Explicitly supported plugins:
 * [vim-signify](https://github.com/mhinz/vim-signify)
 * [vim-sneak](https://github.com/justinmk/vim-sneak)
 * [vim-startify](https://github.com/mhinz/vim-startify)
+* [vim-which-key](https://github.com/liuchengxu/vim-which-key)
 
 The following colorschemes were influential for this theme: [vim-kalisi](https://github.com/freeo/vim-kalisi), [blackboard](https://github.com/lisposter/vim-blackboard), [github](https://github.com/endel/vim-github-colorscheme), molokai, pyte and winter.
 

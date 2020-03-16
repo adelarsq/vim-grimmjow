@@ -1,8 +1,8 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Name:           grimmjow
 " Author:         Adelar S. Queiroz
-" Version:        0.0.22
-" Last Change:    2018.10.16
+" Version:        0.0.23
+" Last Change:    2020.03.16
 " URL:            https://github.com/adelarsq/vim-grimmjow
 " License:        Apache 2.0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -19,6 +19,7 @@ let g:colors_name = 'grimmjow'
 set background=light
 
 hi Normal           guifg=#444444 guibg=#f5f5f5 gui=NONE
+hi NormalFloat      guifg=#444444 guibg=#f5f5f5 gui=NONE
 
 " Syntax
 " ------
@@ -68,8 +69,8 @@ hi Debug            guifg=#ddb800 guibg=NONE    gui=bold
 
 hi Underlined       guifg=#202020 guibg=NONE    gui=underline
 
-hi Error            guifg=#d80000 guibg=#d8d0d0 gui=bold,underline
-hi ErrorMsg         guifg=#d80000 guibg=#d8d0d0 gui=bold
+hi Error            guifg=#d80000 guibg=#f5f5f5 gui=bold,underline
+hi ErrorMsg         guifg=#d80000 guibg=#f5f5f5 gui=bold
 
 " Misc syntax
 " -----------
@@ -109,10 +110,10 @@ hi Cursor           guifg=#F5F5F5 guibg=#37474F gui=NONE
 hi CursorLineNr     guifg=#37474F guibg=#e1e1e1 gui=bold
 hi Cursorline                     guibg=#e1e1e1 gui=none
 hi CursorColumn                   guibg=#e1e1e1 gui=none
-hi LineNr           guifg=#707070 guibg=#ffffff gui=NONE
+hi LineNr           guifg=#707070 guibg=#f5f5f5 gui=NONE
 hi MatchParen       guifg=#ffffff guibg=#ffd030 gui=none
 hi VertSplit        guifg=#a0a0a0 guibg=#f5f5f5 gui=NONE
-hi SignColumn       guifg=#005f00 guibg=#ffffff
+hi SignColumn       guifg=#005f00 guibg=#f5f5f5
 
 if has('multi_byte_ime')
    highlight CursorIM guifg=NONE guibg=Purple
@@ -386,11 +387,11 @@ hi MBEVisibleActiveChanged guifg=#005f00 guibg=#afd700
 hi SignatureMarkText guifg=#0087d7 guibg=#ffffff
 
 " https://github.com/mhinz/vim-signify
-hi SignifySignAdd             guifg=#008700 guibg=#afd700
-hi SignifySignChange          guifg=#666666 guibg=#ffb340
-hi SignifySignChangeDelete    guifg=#666666 guibg=#ffb340
-hi SignifySignDelete          guifg=#333333 guibg=#ff6070
-hi SignifySignDeleteFirstLine guifg=#333333 guibg=#ff6070
+hi SignifySignAdd             guifg=#139f1a guibg=#f5f5f5
+hi SignifySignChange          guifg=#F39200 guibg=#f5f5f5
+hi SignifySignChangeDelete    guifg=#F39200 guibg=#f5f5f5
+hi SignifySignDelete          guifg=#ff6070 guibg=#f5f5f5
+hi SignifySignDeleteFirstLine guifg=#ff6070 guibg=#f5f5f5
 
 " https://github.com/justinmk/vim-sneak
 hi SneakPluginTarget guibg=#ffaf00 guifg=#ffff00 gui=bold ctermbg=214 ctermfg=226 cterm=bold
@@ -409,6 +410,11 @@ hi link StartifyFooter StartifyHeader
 " https://github.com/mbbill/undotree
 hi UndotreeSavedBig ctermfg=245   guifg=#11AF46
 hi UndotreeSavedSmall ctermfg=240 guifg=#F1266F
+
+" https://github.com/liuchengxu/vim-which-key
+hi WhichKey          guifg=#ffffff
+hi WhichKeySeperator guifg=#66b600
+hi WhichKeyDesc      guifg=#ffffff
 
 " 256 Color Terminal (light)
 if &t_Co > 255
@@ -496,3 +502,4 @@ if &t_Co > 255
     hi javaScript ctermfg=59
     hi DjangoBlock cterm=bold ctermfg=22
 endif
+
