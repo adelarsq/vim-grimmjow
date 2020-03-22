@@ -86,6 +86,7 @@ Explicitly supported plugins:
 * [tagbar](https://github.com/majutsushi/tagbar)
 * [undotree](https://github.com/mbbill/undotree)
 * [vim-bookmarks](https://github.com/MattesGroeger/vim-bookmarks)
+* [vim-clap](https://github.com/liuchengxu/vim-clap)
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion)
 * [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
 * [vim-matchmaker](https://github.com/qstrahl/vim-matchmaker)

@@ -1,8 +1,8 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Name:           grimmjow
 " Author:         Adelar S. Queiroz
-" Version:        0.0.23
-" Last Change:    2020.03.16
+" Version:        0.0.24
+" Last Change:    2020.03.21
 " URL:            https://github.com/adelarsq/vim-grimmjow
 " License:        Apache 2.0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -25,9 +25,9 @@ hi NormalFloat      guifg=#444444 guibg=#f5f5f5 gui=NONE
 " ------
 
 hi Comment          guifg=#70a0d0 guibg=NONE    gui=NONE
-" TODO avoid background glitch 
+" TODO avoid background glitch
 hi CommentURL       guifg=#70a0ff guibg=NONE    gui=underline
-" TODO avoid background glitch 
+" TODO avoid background glitch
 hi CommentEmail     guifg=#70a0ff guibg=NONE    gui=underline
 hi SpecialComment   guifg=#6090c0               gui=bold
 
@@ -90,8 +90,8 @@ hi Conceal          guifg=#303030 guibg=#e0e8e0
 
 hi ColorColumn      guibg=#f0f0f0 term=reverse ctermbg=254
 
-hi DiffAdd                        guibg=#ddffdd 
-hi DiffChange                     guibg=#e8e8e8 
+hi DiffAdd                        guibg=#ddffdd
+hi DiffChange                     guibg=#e8e8e8
 hi DiffText         guifg=#000055 guibg=#ddddff
 hi DiffDelete       guifg=#eecccc guibg=#ffdddd
 
@@ -278,7 +278,7 @@ hi link TagbarSignature Comment
 hi TagbarScope        guifg=#0087d7 gui=bold ctermfg=32 cterm=bold
 hi TagbarType         guifg=#66b600 gui=bold ctermfg=70 cterm=bold
 hi TagbarKind         guifg=#0087d7 ctermfg=21
-hi TagbarAccessPublic guifg=#66b600  
+hi TagbarAccessPublic guifg=#66b600
 
 " https://github.com/MattesGroeger/vim-bookmarks
 hi BookmarkSign ctermbg=NONE ctermfg=160 guifg=#FF2C4B guibg=#ffffff
@@ -314,66 +314,73 @@ hi EasyMotionTarget2Second ctermbg=none ctermfg=green guifg=#1994d1 gui=bold
 
 " https://github.com/nathanaelkane/vim-indent-guides
 let g:indent_guides_auto_colors = 0
-hi IndentGuidesEven guifg=#dcdedc guibg=#e9e9e9 
+hi IndentGuidesEven guifg=#dcdedc guibg=#e9e9e9
 hi IndentGuidesOdd  guifg=#e9e9e9 guibg=#dcdedc
 
 " https://github.com/qstrahl/vim-matchmaker
 hi Matchmaker gui=underline
 
-" https://github.com/severin-lemaignan/vim-minimap 
+" https://github.com/severin-lemaignan/vim-minimap
 hi Minimap guibg=#a0a0a0 guifg=#e0e0e0
 
 " https://github.com/tiagofumo/vim-nerdtree-syntax-highlight
 let g:NERDTreeExtensionHighlightColor = {}
-let g:NERDTreeExtensionHighlightColor['bat'        ] =  'ff8b52' 
-let g:NERDTreeExtensionHighlightColor['class'      ] =  '80cbc4' 
-let g:NERDTreeExtensionHighlightColor['conf'       ] =  '8cffba' 
-let g:NERDTreeExtensionHighlightColor['css'        ] =  'ffcde6' 
-let g:NERDTreeExtensionHighlightColor['deb'        ] =  'ffb340' 
-let g:NERDTreeExtensionHighlightColor['odt'        ] =  '7fff00' 
-let g:NERDTreeExtensionHighlightColor['doc'        ] =  '7fff00' 
-let g:NERDTreeExtensionHighlightColor['docx'       ] =  '7fff00' 
-let g:NERDTreeExtensionHighlightColor['dtd'        ] =  'ff2c4b' 
-let g:NERDTreeExtensionHighlightColor['ear'        ] =  'ffb340' 
-let g:NERDTreeExtensionHighlightColor['fxml'       ] =  'ff2c4b' 
-let g:NERDTreeExtensionHighlightColor['frxml'      ] =  'ff2c4b' 
-let g:NERDTreeExtensionHighlightColor['gif'        ] =  'f5c06f' 
+let g:NERDTreeExtensionHighlightColor['bat'        ] =  'ff8b52'
+let g:NERDTreeExtensionHighlightColor['class'      ] =  '80cbc4'
+let g:NERDTreeExtensionHighlightColor['conf'       ] =  '8cffba'
+let g:NERDTreeExtensionHighlightColor['css'        ] =  'ffcde6'
+let g:NERDTreeExtensionHighlightColor['deb'        ] =  'ffb340'
+let g:NERDTreeExtensionHighlightColor['odt'        ] =  '7fff00'
+let g:NERDTreeExtensionHighlightColor['doc'        ] =  '7fff00'
+let g:NERDTreeExtensionHighlightColor['docx'       ] =  '7fff00'
+let g:NERDTreeExtensionHighlightColor['dtd'        ] =  'ff2c4b'
+let g:NERDTreeExtensionHighlightColor['ear'        ] =  'ffb340'
+let g:NERDTreeExtensionHighlightColor['fxml'       ] =  'ff2c4b'
+let g:NERDTreeExtensionHighlightColor['frxml'      ] =  'ff2c4b'
+let g:NERDTreeExtensionHighlightColor['gif'        ] =  'f5c06f'
 let g:NERDTreeExtensionHighlightColor['gradle'     ] =  '00c489' " gradle's logo color
-let g:NERDTreeExtensionHighlightColor['groovy'     ] =  '4298b8' 
-let g:NERDTreeExtensionHighlightColor['gz'         ] =  'ffb340' 
-let g:NERDTreeExtensionHighlightColor['html'       ] =  '85ff66' 
-let g:NERDTreeExtensionHighlightColor['iml'        ] =  'ad8fcc' 
-let g:NERDTreeExtensionHighlightColor['jar'        ] =  'ffb340' 
-let g:NERDTreeExtensionHighlightColor['java'       ] =  '80cbc4' 
-let g:NERDTreeExtensionHighlightColor['jnlp'       ] =  'ad8fcc' 
-let g:NERDTreeExtensionHighlightColor['jpeg'       ] =  'F5C06F' 
-let g:NERDTreeExtensionHighlightColor['jpg'        ] =  'F5C06F' 
-let g:NERDTreeExtensionHighlightColor['js'         ] =  'ffa500' 
-let g:NERDTreeExtensionHighlightColor['lock'       ] =  'FFFF00' 
-let g:NERDTreeExtensionHighlightColor['markdown'   ] =  'B973FF' 
-let g:NERDTreeExtensionHighlightColor['md'         ] =  'B973FF' 
-let g:NERDTreeExtensionHighlightColor['mkd'        ] =  'B973FF' 
-let g:NERDTreeExtensionHighlightColor['php'        ] =  'ff00ff' 
-let g:NERDTreeExtensionHighlightColor['png'        ] =  'F5C06F' 
-let g:NERDTreeExtensionHighlightColor['properties' ] =  '8cffba' 
-let g:NERDTreeExtensionHighlightColor['py'         ] =  '70d080' 
-let g:NERDTreeExtensionHighlightColor['rar'        ] =  'FFB340' 
-let g:NERDTreeExtensionHighlightColor['rpm'        ] =  'FFB340' 
-let g:NERDTreeExtensionHighlightColor['rs'         ] =  'FF7033' 
-let g:NERDTreeExtensionHighlightColor['rst'        ] =  'B973FF' 
-let g:NERDTreeExtensionHighlightColor['sql'        ] =  '66A3FF' 
-let g:NERDTreeExtensionHighlightColor['tags'       ] =  'ff6070' 
-let g:NERDTreeExtensionHighlightColor['ttf'        ] =  'd0eeff' 
-let g:NERDTreeExtensionHighlightColor['txt'        ] =  '444444' 
-let g:NERDTreeExtensionHighlightColor['vim'        ] =  'afd700' 
-let g:NERDTreeExtensionHighlightColor['war'        ] =  'FFB340' 
-let g:NERDTreeExtensionHighlightColor['xml'        ] =  'ff2c4b' 
-let g:NERDTreeExtensionHighlightColor['xls'        ] =  'ffff7d' 
-let g:NERDTreeExtensionHighlightColor['xlsx'       ] =  'ffff7d' 
-let g:NERDTreeExtensionHighlightColor['xsd'        ] =  'ff2c4b' 
-let g:NERDTreeExtensionHighlightColor['yaml'       ] =  'c8c8c8' 
-let g:NERDTreeExtensionHighlightColor['yml'        ] =  'c8c8c8' 
-let g:NERDTreeExtensionHighlightColor['zip'        ] =  'FFB340' 
+let g:NERDTreeExtensionHighlightColor['groovy'     ] =  '4298b8'
+let g:NERDTreeExtensionHighlightColor['gz'         ] =  'ffb340'
+let g:NERDTreeExtensionHighlightColor['html'       ] =  '85ff66'
+let g:NERDTreeExtensionHighlightColor['iml'        ] =  'ad8fcc'
+let g:NERDTreeExtensionHighlightColor['jar'        ] =  'ffb340'
+let g:NERDTreeExtensionHighlightColor['java'       ] =  '80cbc4'
+let g:NERDTreeExtensionHighlightColor['jnlp'       ] =  'ad8fcc'
+let g:NERDTreeExtensionHighlightColor['jpeg'       ] =  'F5C06F'
+let g:NERDTreeExtensionHighlightColor['jpg'        ] =  'F5C06F'
+let g:NERDTreeExtensionHighlightColor['js'         ] =  'ffa500'
+let g:NERDTreeExtensionHighlightColor['lock'       ] =  'FFFF00'
+let g:NERDTreeExtensionHighlightColor['markdown'   ] =  'B973FF'
+let g:NERDTreeExtensionHighlightColor['md'         ] =  'B973FF'
+let g:NERDTreeExtensionHighlightColor['mkd'        ] =  'B973FF'
+let g:NERDTreeExtensionHighlightColor['php'        ] =  'ff00ff'
+let g:NERDTreeExtensionHighlightColor['png'        ] =  'F5C06F'
+let g:NERDTreeExtensionHighlightColor['properties' ] =  '8cffba'
+let g:NERDTreeExtensionHighlightColor['py'         ] =  '70d080'
+let g:NERDTreeExtensionHighlightColor['rar'        ] =  'FFB340'
+let g:NERDTreeExtensionHighlightColor['rpm'        ] =  'FFB340'
+let g:NERDTreeExtensionHighlightColor['rs'         ] =  'FF7033'
+let g:NERDTreeExtensionHighlightColor['rst'        ] =  'B973FF'
+let g:NERDTreeExtensionHighlightColor['sql'        ] =  '66A3FF'
+let g:NERDTreeExtensionHighlightColor['tags'       ] =  'ff6070'
+let g:NERDTreeExtensionHighlightColor['ttf'        ] =  'd0eeff'
+let g:NERDTreeExtensionHighlightColor['txt'        ] =  '444444'
+let g:NERDTreeExtensionHighlightColor['vim'        ] =  'afd700'
+let g:NERDTreeExtensionHighlightColor['war'        ] =  'FFB340'
+let g:NERDTreeExtensionHighlightColor['xml'        ] =  'ff2c4b'
+let g:NERDTreeExtensionHighlightColor['xls'        ] =  'ffff7d'
+let g:NERDTreeExtensionHighlightColor['xlsx'       ] =  'ffff7d'
+let g:NERDTreeExtensionHighlightColor['xsd'        ] =  'ff2c4b'
+let g:NERDTreeExtensionHighlightColor['yaml'       ] =  'c8c8c8'
+let g:NERDTreeExtensionHighlightColor['yml'        ] =  'c8c8c8'
+let g:NERDTreeExtensionHighlightColor['zip'        ] =  'FFB340'
+
+" https://github.com/liuchengxu/vim-clap
+hi ClapInput guifg=#444444 guibg=#f5f5f5 gui=NONE
+hi ClapSearchText guifg=#444444 guibg=#f5f5f5 gui=NONE
+hi ClapSpinner guifg=#444444 guibg=#f5f5f5 gui=NONE
+hi ClapCurrentSelection guifg=#ffffff guibg=#1994d1 gui=none
+hi ClapSelected  guifg=#ffffff guibg=#1994d1 gui=bold
 
 " https://github.com/weynhamz/vim-plugin-minibufexpl
 hi MBENormal               guifg=#586e75 guibg=#c9c4c4
